@@ -1,8 +1,8 @@
 ---
-title: Week 0 Announcement
-week: 0
-date: 2019-04-01
+title: Announcement
+week: Go Bears
+date: 2025-03-07
 ---
 
-Hello world!
+This site is under construction. If you have any questions or want to contribute, feel free to reach out to [Silas Santini](mailto:silascs@berkeley.edu).
 {: .fs-5 }

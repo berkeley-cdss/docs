@@ -42,7 +42,6 @@ module Jekyll
     # and definite VALID_KEY_NAME above
     KEY_VALIDATIONS = {
       url: :validate_clean_url,
-      baseurl: :validate_semester_format,
       course_department: :inclusion_validator,
       color_scheme: :inclusion_validator
     }.freeze
