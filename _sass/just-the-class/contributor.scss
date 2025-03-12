@@ -1,8 +1,8 @@
-.staffer {
+.contributor {
   display: flex;
   margin: $sp-4 0;
 
-  .staffer-image {
+  .contributor-image {
     border-radius: 50%;
     height: 100px;
     margin-right: $sp-4;
@@ -10,7 +10,7 @@
   }
 
   p,
-  .staffer-name {
+  .contributor-name {
     margin: $sp-1 !important;
 
   .anchor-heading {
@@ -20,14 +20,14 @@
     }
   }
 
-  .staffer-badge {
+  .contributor-badge {
     @extend .label, .text-grey-dk-300, .bg-grey-lt-200;
 
     -webkit-user-select: none;
     user-select: none;
   }
 
-  .staffer-meta {
+  .contributor-meta {
     color: $grey-dk-300;
   }
 }
