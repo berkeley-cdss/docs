@@ -2,7 +2,7 @@
 layout: page
 title: Acknowledgements
 description: acknowledgements and contributors
-nav_order: 4
+nav_order: 5
 ---
 
 # Acknowledgements
@@ -12,9 +12,3 @@ We'd like to thank [peyrin](https://github.com/peyrin) and others that have cont
 Seamless Learning run by [Lisa Yan](https://github.com/yanlisa) and [Michael Ball](https://github.com/cycomachead) is an essential place for gathering staff, TAs, and faculty to discuss common issues. The documentation here is a direct result of Seamless Learning's efforts.
 
 We'd also like to thank all of the contributors to the software that our courses depend on, especially those helping maintain open source software.
-
-## Contributors
-
-In alphabetical order,
-* [Rebecca Dang](https://github.com/phrdang)
-* [Silas Santini](https://github.com/pancakereport)
