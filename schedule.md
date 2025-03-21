@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Schedule
-description: Course topics, lectures, and assignments schedule.
+description: 
 
 nav_order: 1
 published: true
 ---
 
-# Schedule
+# TA Best Practices Lunch Schedule
 
-{% for module in site.modules %}
-  {{ module }}
-{% endfor %}
+Please make sure to RSVP on the calendar invite.
+
+<iframe data-a11y-errors="true" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSRWCqPiZhJpkcoLk4LqGVMcqhEByVEHu5nyTvAO4UGgNmLC60zHNySOYmJDMnTljSmp8HXgiqTuzXo/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="570"></iframe>
