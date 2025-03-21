@@ -10,10 +10,9 @@ seo:
 
 # UC Berkeley CDSS Common Documentation
 
-{% assign announcements = site.announcements | reverse %}
-{% for announcement in announcements %}
-{{ announcement }}
-{% endfor %}
+{: .note}
+We welcome contributions! If you find a typo or want to add an article, please submit a pull request.
+
 
 ## Documentation for tools developed or maintained by Seamless Learning, CDSS TAs, and staff
 
@@ -24,3 +23,4 @@ Overall project goals:
 * Improve large classroom management,
 * Enable equitable grading strategies, and
 * Foster an educational technology community across campus. We're all here to teach and learn!
+

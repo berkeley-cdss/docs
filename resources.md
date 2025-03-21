@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Resources
-description: >-
-    Course resources
-nav_order: 4
+description: Resources for TAs
+nav_order: 1
 ---
 
 # Resources
 
-Add links to course resources here
+{: .warning}
+This page is in construction.
