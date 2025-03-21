@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Schedule
+title: TA Best Practices Schedule Spring 2025
 description: 
 
 nav_order: 1
