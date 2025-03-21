@@ -22,7 +22,7 @@ author: Silas Santini
 color_scheme: light
 
 baseurl: '/docs' # the subpath of your site
-url: 'berkeley-cdss.github.io' # the hostname & protocol for your site, e.g. http://example.com
+url: 'https://berkeley-cdss.github.io' # the hostname & protocol for your site, e.g. http://example.com
 
 # Custom variables, which can appear in various places around the website
 email: seamless-learning@berkeley.edu
