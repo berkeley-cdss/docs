@@ -2,8 +2,11 @@
 layout: page
 title: Using GitHub
 nav_order: 2
-has_toc: true
 has_children: true
 ---
 
-# Using Github
+# Quick Links
+
+* [GitHub's Documentation](https://docs.github.com/en)
+* 
+
