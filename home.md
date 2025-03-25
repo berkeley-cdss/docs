@@ -11,7 +11,7 @@ seo:
 # UC Berkeley CDSS Common Documentation
 
 {: .note}
-We welcome contributions! If you find a typo or want to add an article, please submit a [pull request](https://github.com/berkeley-cdss/docs/pulls).
+We welcome contributions! If you find a typo or want to add an article, please submit a pull request.
 
 
 ## Documentation for tools developed or maintained by CDSS TAs, instructors, and staff
