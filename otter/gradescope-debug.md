@@ -37,15 +37,15 @@ Note: If you open a terminal from JupyterLab you will need to rerun `conda activ
 
 2. Convert the `.pkl` file into a notebook by running the following [Python snippet](https://otter-grader.readthedocs.io/en/latest/debugging.html#viewing-the-executed-notebook) in the `results` directory:
 
-```
-import dill
-import nbformat
+    ```
+    import dill
+    import nbformat
 
-with open("results.pkl", "rb") as f:
-    res = dill.load(f)
+    with open("results.pkl", "rb") as f:
+        res = dill.load(f)
 
-nbformat.write(res.notebook, "executed.ipynb")
-```
+    nbformat.write(res.notebook, "executed.ipynb")
+    ```
 
 3. You can now inspect the output of running the autograder directly on the student's submission by viewing `executed.ipynb`.
 
