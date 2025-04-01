@@ -18,18 +18,23 @@ Note: If you are working on an assignment that will be released to students on a
 ## Before the start of the semester
 
 1. Review what Python packages your class is using.
-    * If you are not developing or altering assignments, you can use files like `requirements.txt` and look at your `import` statements. 
-<!--
-    * TODO: For a systematic way to gather this information, place this notebook at the root of your directory and run through it.
--->
+   * If you are not developing or altering assignments, you can use files like `requirements.txt` and look at your `import` statements. 
+   * For a systematic way to gather this information, we'll later provide a notebook that gathers all requirements into a a text file.
 
 2. Check that all Python packages are available on the DataHub offering that your course is using.
 
-3. If you need to request a package for your hub, fill out a new [GitHub Issue](https://github.com/berkeley-dsep-infra/datahub/issues). Choose the "Package Addition/Change Request" Template. 
+3. If you need to request a package for your hub, fill out a [GitHub Issue](https://github.com/berkeley-dsep-infra/datahub/issues/new?assignees=&labels=support&template=datahub-package-addition---change-request.md&title=Request+python+package+X+for+class+Y). More information on requesting packages and testing for package compatibility on the hub [here](https://curriculum-guide.datahub.berkeley.edu/workflows/install-packages).
+
+4. Ensure that the packages AND THEIR VERSIONS on the hub match your `requirements.txt` used by otter. To check a package version, use Python to import the package and print out its version like so:
+
+```
+import numpy
+numpy.__version__
+```
 
 ## Before an assignment is released
 
-We recommend running `otter assign` on DataHub. We do NOT recommend running this command locally. You can clone the development repo in DataHub via the command line/terminal. It is safe to do so; you do not need to worry about students accidentally getting access to the solutions.
+We recommend running `otter assign` on DataHub. We do NOT recommend running this command locally. You can clone the development repo in DataHub via the command line/terminal. It is safe to do so; you do not need to worry about students accidentally getting access to solutions.
 
 Ensure that the solution runs on DataHub without issue; i.e. "Run All Cells" on the solution notebook generated from `otter assign`. 
 
