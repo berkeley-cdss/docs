@@ -14,7 +14,7 @@ Notable Seamless Learning projects are listed below.
 
 You can message any of the contributors on Slack on EECS/DS Crossroads or email us at [{{ site.email }}](mailto:{{ site.email }}).
 
-{: .new-title }
+{: .highlight }
 > Contributions Welcome
 >
 > We are proudly open-source and welcome all contributions. Existing work is the efforts of many past instructors and TAs.
