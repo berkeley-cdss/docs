@@ -2,7 +2,7 @@
 layout: page
 title: Licensing
 parent: Using GitHub
-nav_order: 3
+nav_order: 4
 ---
 
 # Please, Please, Please, License Your Public GitHub Repositories
