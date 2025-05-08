@@ -2,7 +2,7 @@
 layout: page
 title: Contact
 description: Contact information
-nav_order: 5
+nav_order: 6
 ---
 
 # Contact

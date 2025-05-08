@@ -2,7 +2,7 @@
 layout: page
 title: Acknowledgements
 description: acknowledgements and contributors
-nav_order: 6
+nav_order: 8
 ---
 
 # Acknowledgements
