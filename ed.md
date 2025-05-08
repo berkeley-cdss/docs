@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Edstem Tips and Tricks
+title: EdStem 
 nav_order: 5
 published: true
 ---
 
-# Edstem Tips and Tricks
+# EdStem Tips and Tricks
 
-[Edstem](https://edstem.org), or Ed for short, is the online course Q&A forum used at UC Berkeley.
+[EdStem](https://edstem.org), or Ed for short, is the online course Q&A forum used at UC Berkeley.
 Many TAs know the basic functionality of Ed posts, but here are some lesser known tips and tricks.
 
 ## Additional Features
