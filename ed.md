@@ -1,6 +1,6 @@
 ---
 layout: page
-title: EdStem 
+title: EdStem
 nav_order: 5
 published: true
 ---
@@ -25,9 +25,10 @@ Ping other staff using @ mentions.
 
 ## Bots
 
-Create Ed bots.
+Create Ed bots to perform actions in an automated way. For example, you can validate that threads are formatted a certain way, automatically track Ed engagement by students, remind students to follow post guidelines,
+or use AI to answer questions (e.g. [Edison](https://dl.acm.org/doi/abs/10.1145/3641554.3701965)).
 
-<img src="{{ site.baseurl }}/assets/images/edstem/bots.png" width="300px" alt="ed bot">
+<img src="{{ site.baseurl }}/assets/images/edstem/bots.png" width="700px" alt="ed bot">
 
 
 ## Callouts
@@ -58,7 +59,7 @@ You can write Latex if you need to write mathematical symbols:
 
 ## Runnable Code Blocks
 
-You can post runnable code blocks with line numbers:
+You can post runnable code blocks with line numbers by clicking the icon circled in red (looks like `< >`):
 
 <img src="{{ site.baseurl }}/assets/images/edstem/runnable-code.png" width="500px" alt="runnable python code block">
 
