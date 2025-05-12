@@ -2,7 +2,7 @@
 layout: page
 title: Course Websites
 parent: Seamless Learning
-nav_order: 3
+nav_order: 4
 has_children: false
 ---
 
