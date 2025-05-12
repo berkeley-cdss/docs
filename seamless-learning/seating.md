@@ -3,7 +3,6 @@ layout: page
 title: Seating
 parent: Seamless Learning
 nav_order: 2
-has_children: false
 ---
 
 # Seating

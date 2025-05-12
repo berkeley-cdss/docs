@@ -2,11 +2,10 @@
 layout: page
 title: Releasing an Assignment
 parent: Otter Grader
-nav_order: 1
 ---
 
 <p class="warning">
-This page is a work in progress. This is only the first draft. 
+This page is a work in progress. This is only the first draft.
 </p>
 
 # Releasing an Assignment using Otter Grader
@@ -18,7 +17,7 @@ Note: If you are working on an assignment that will be released to students on a
 ## Before the start of the semester
 
 1. Review what Python packages your class is using.
-   * If you are not developing or altering assignments, you can use files like `requirements.txt` and look at your `import` statements. 
+   * If you are not developing or altering assignments, you can use files like `requirements.txt` and look at your `import` statements.
    * For a systematic way to gather this information, we'll later provide a notebook that gathers all requirements into a a text file.
 
 2. Check that all Python packages are available on the DataHub offering that your course is using.
@@ -36,7 +35,7 @@ numpy.__version__
 
 We recommend running `otter assign` on DataHub. We do NOT recommend running this command locally. You can clone the development repo in DataHub via the command line/terminal. It is safe to do so; you do not need to worry about students accidentally getting access to solutions.
 
-Ensure that the solution runs on DataHub without issue; i.e. "Run All Cells" on the solution notebook generated from `otter assign`. 
+Ensure that the solution runs on DataHub without issue; i.e. "Run All Cells" on the solution notebook generated from `otter assign`.
 
 Only push to the student facing repository once all changes have been made. You don't want to accidentally break an nbgitpuller link.
 

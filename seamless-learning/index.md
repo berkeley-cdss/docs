@@ -2,7 +2,6 @@
 layout: page
 title: Seamless Learning
 nav_order: 2
-has_children: true
 ---
 
 # Seamless Learning

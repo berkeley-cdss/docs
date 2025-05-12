@@ -2,12 +2,11 @@
 layout: page
 title: Gradescope Debugging via SSH
 parent: Otter Grader
-nav_order: 2
 ---
 
 # Otter-Gradescope Debugging
 
-Downloading a student's graded submission concatenates the output from the autograder and a PDF copy of the student's submitted `.ipynb`. This PDF of the `.ipynb` will have the output from public tests run on datahub (or wherever the student completed the assignment); it will not have the output from the autograder running in the grading container. 
+Downloading a student's graded submission concatenates the output from the autograder and a PDF copy of the student's submitted `.ipynb`. This PDF of the `.ipynb` will have the output from public tests run on datahub (or wherever the student completed the assignment); it will not have the output from the autograder running in the grading container.
 
 It is possible that the grading container may have a different environment than datahub (or wherever the student completed the assignment) if `requirements.txt` is out of date. **We do not recommend running student submissions locally,** and it is also possible that the environment is different than whatever you may have locally.
 
@@ -53,5 +52,4 @@ Note: If you open a terminal from JupyterLab you will need to rerun `conda activ
 
 1. Move `executed.ipynb` from the `results` directory into the `submission` directory. This ensures you have access to any associated files and allows otter commands to run without issue.
 
-2. You may need to adjust the kernel to use the virtual environment `otter-env`. 
-
+2. You may need to adjust the kernel to use the virtual environment `otter-env`.

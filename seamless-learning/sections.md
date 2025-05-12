@@ -3,7 +3,6 @@ layout: page
 title: Sections
 parent: Seamless Learning
 nav_order: 3
-has_children: false
 ---
 
 # Sections

@@ -3,7 +3,6 @@ layout: page
 title: Exam Timer
 parent: Seamless Learning
 nav_order: 5
-has_children: false
 ---
 
 # Exam Timer

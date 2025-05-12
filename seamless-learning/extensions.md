@@ -3,7 +3,6 @@ layout: page
 title: Extensions
 parent: Seamless Learning
 nav_order: 1
-has_children: false
 ---
 
 # Extensions

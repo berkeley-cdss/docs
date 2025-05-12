@@ -3,7 +3,6 @@ layout: page
 title: Seamless Bot
 parent: Seamless Learning
 nav_order: 6
-has_children: false
 ---
 
 # Seamless Bot

@@ -1,12 +1,11 @@
 ---
 layout: page
 title: Exams
-nav_order: 3
-has_children: true
+nav_order: 4
 ---
 
 # Exams
 
 ## Quick Links
 
-- [CS 161 Pedagogy Blog: How to Write Solid Exam Questions](https://pedagogy.cs161.org/2022/02/06/exam-writing-i/) 
+- [CS 161 Pedagogy Blog: How to Write Solid Exam Questions](https://pedagogy.cs161.org/2022/02/06/exam-writing-i/)
