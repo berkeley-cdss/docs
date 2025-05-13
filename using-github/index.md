@@ -1,8 +1,7 @@
 ---
 layout: page
 title: Using GitHub
-nav_order: 6
-has_children: true
+nav_order: 3
 ---
 
 # Using GitHub

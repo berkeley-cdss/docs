@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Otter Grader
-nav_order: 7
+nav_order: 2
+parent: Course Software
 has_toc: true
-has_children: true
 ---
 
 # Otter Grader Help

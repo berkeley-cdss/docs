@@ -1,8 +1,7 @@
 ---
 layout: page
 title: Course Logistics
-nav_order: 3
-has_children: true
+nav_order: 4
 ---
 
 # Course Logistics
