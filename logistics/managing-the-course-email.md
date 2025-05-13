@@ -2,7 +2,7 @@
 layout: page
 title: Managing Course Email
 parent: Course Logistics
-nav_order: 1
+nav_order: 2
 ---
 
 # Managing Course Email

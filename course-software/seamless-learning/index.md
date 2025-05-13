@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Seamless Learning
-nav_order: 2
+parent: Course Software
+nav_order: 1
 ---
 
 # Seamless Learning

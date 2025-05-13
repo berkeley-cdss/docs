@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Using GitHub
-nav_order: 5
+nav_order: 3
 ---
 
 # Using GitHub

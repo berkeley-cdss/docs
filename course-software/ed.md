@@ -1,7 +1,8 @@
 ---
 layout: page
 title: EdStem
-nav_order: 5
+parent: Course Software
+nav_order: 4
 published: true
 ---
 
