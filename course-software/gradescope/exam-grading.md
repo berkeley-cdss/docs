@@ -18,7 +18,7 @@ Part of this includes finding which region of the exam you want the question to 
 <img src="{{ site.baseurl }}/assets/images/gradescope/exam-outline.png" width="500px" alt="gradescope exam outline">
 
 The box size you choose to include depends on the type of question you're grading. If the question requires a
-single specific answer (e.g. `8 KiB` or $30 \text{ sectors}$), you may want to restrict the box to the answer box
+single specific answer (e.g. `8 KiB` or 30 sectors), you may want to restrict the box to the answer box
 itself. If the question is a short or long answer however, it is fine to include the question, as it makes it
 easier for other graders to review the entire rubric en masse. The next section will explain why.
 
@@ -31,7 +31,7 @@ answers, multiple choice, text, or math. Multiple choice is self-explanatory.
 
 **Text/math**: When doing text or math, the algorithm will evaluate all text within the box you've selected for
 the answer outline, which is why restricting the outline box to the answer box will help eliminate erroneous
-groupings that include scratch work. 
+groupings that include scratch work.
 
 If you intend to evaluate an answer fully taking the work they show into account, it is likely fine to include
 both the answer box and the scratch work box and just do blank answer grouping.
@@ -86,3 +86,9 @@ what percentage of complete understanding does the student have to grasp to arri
 
 These questions will be left as a thought experiment for the reader, who is encouraged to think about
 their own exams and how framing exam grading in this way might influence rubrics.
+
+## Relevant Gradescope Docs
+
+- [Managing Assignments](https://guides.gradescope.com/hc/en-us/sections/21586609950477-Managing-Assignments)
+- [Exam/Quiz Assignments](https://guides.gradescope.com/hc/en-us/sections/27893603774605-Exam-Quiz-Assignments)
+- [Answer Groups](https://guides.gradescope.com/hc/en-us/articles/24838908062093-AI-Assisted-Grading-and-Answer-Groups)
