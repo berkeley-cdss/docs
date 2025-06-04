@@ -23,6 +23,8 @@ UC Berkeley does not currently provide premium versions of Slack (see their [pri
 but some courses may decide to use a portion of their budget for this.
 The main benefit is that messages are retained for a long period of time, rather than being deleted.
 
+If you are associated with a DATA course and would like to get access to a Slack subscription for that DATA course, email ds-courses @ berkeley.edu in advance with the total cost and a brief explanation for why the subscription is necessary. 
+
 <!-- TODO how to get a paid slack -->
 
 ## Channels to have
