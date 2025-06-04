@@ -39,7 +39,7 @@ Below are some suggestions on what channels to have in your course staff Slack, 
 | #midterm, #final | ✅ | To discuss exam creation, logistics, and day-of coordination. Can also be used as a log for academic misconduct |
 | #covers | ✅ | To request a cover or take a cover, for example if staff has a time conflict for office hours or their section |
 | #ed | ✅ | To discuss Ed posts, for example if a staff member isn't sure how to respond to a question |
-| #extensions | ❌ | A channel for updates by the [Flextensions](/course-software/seamless-learning/extensions.md) Slack app. Should be private to protect sensitive student data. |
+| #extensions | ❌ | A channel for updates by the [Flextensions]({% link course-software/seamless-learning/extensions.md %}) Slack app. Should be private to protect sensitive student data. |
 | #union | ❌ | A private channel for ASEs only (no instructors) to discuss union-related matters |
 | #spotted | ✅ | A channel to post pictures of other staff members when you spontaneously run into them on campus. Pairs well with [Spotbot](https://github.com/LarynQi/spot-bot) |
 
