@@ -11,6 +11,10 @@ published: true
 [EdStem](https://edstem.org), or Ed for short, is the online course Q&A forum used at UC Berkeley.
 Many TAs know the basic functionality of Ed posts, but here are some lesser known tips and tricks.
 
+## Official Documentation for Ed
+
+Official documentation for Ed is found [here](https://edstem.org/us/help). 
+
 ## Additional Features
 
 Ed will often have additional (beta) features you can optionally turn on. For example, the Chats feature
@@ -40,9 +44,10 @@ Add callouts when you want to emphasize certain text (e.g. give a warning/danger
 
 ## Mark threads as duplicate, decline threads, or lock threads
 
-- Mark threads as duplicate to redirect student to a post that already has the answer they're looking for
-- Decline threads if they don't follow your template
-- Lock threads if the discussion gets heated or if you have a post you don't want comments on (e.g. a course index post)
+- Mark threads as duplicate to redirect student to a post that already has the answer they're looking for.
+- Decline threads if they don't follow your template.
+- Lock threads if the discussion gets heated or if you have a post you don't want comments on (e.g. a course index post).
+- Typically all threads are locked (made "Read only" or "Private threads only") during exams, from the time the first exam starts to the time the last exam ends including any alternate exams scheduled. More information [here](https://edstem.org/us/help/tips-and-tricks#discussion-locking).
 
 <img src="{{ site.baseurl }}/assets/images/edstem/duplicate-decline-lock.png" width="300px" alt="mark as duplicate, decline, or lock">
 
