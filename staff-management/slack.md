@@ -23,9 +23,10 @@ UC Berkeley does not currently provide premium versions of Slack (see their [pri
 but some courses may decide to use a portion of their budget for this.
 The main benefit is that messages are retained for a long period of time, rather than being deleted.
 
-If you are associated with a DATA course and would like to get access to a Slack subscription for that DATA course, email ds-courses @ berkeley.edu in advance with the total cost and a brief explanation for why the subscription is necessary. 
+If you would like to purchase a premium Slack subscription:
 
-<!-- TODO how to get a paid slack -->
+- **If you are associated with an EECS or CS course**, contact your faculty instructor and see if they have discretionary funds available and submit a purchase request through [ERSO](https://www.erso.berkeley.edu/web/contact-us) intranet. Avoid making a purchase with a personal credit card and reimbursing after the fact, because it may not be approved. See also: UC Berkeley Supply Chain Management [Software & Services Reimbursement Form](https://supplychain.berkeley.edu/procurement/procurement-forms).
+- **If you are associated with a DATA course**, email ds-courses @ berkeley.edu in advance with the total cost and a brief explanation for why the subscription is necessary.
 
 ## Channels to have
 
@@ -35,7 +36,7 @@ Below are some suggestions on what channels to have in your course staff Slack, 
 | :--- | :--- | :--- |
 | #general | ✅ | General work conversation and announcements. A good place to pin/bookmark important documents, like the staff meeting notes. |
 | #random | ✅ | Anything that doesn't fit the other channels |
-| #head-tas, #tas, #tutors, #readers | ❌ | Channels by staff role |
+| #head-tas, #tas, #tutors, #readers, #academic-interns | ❌ | Channels by staff role |
 | #disc, #hw, #lab, #projects | ✅ | To discuss assignment content and development |
 | #infra | ✅ | To discuss course infrastructure |
 | #midterm, #final | ✅ | To discuss exam creation, logistics, and day-of coordination. Can also be used as a log for academic misconduct |
@@ -76,7 +77,3 @@ Below are some suggestions on what channels to have in your course staff Slack, 
 ## Custom Emojis
 
 Slack can be a great way to create a fun staff culture, especially through [custom emojis](https://slack.com/help/articles/206870177-Add-custom-emoji-and-aliases-to-your-workspace). [Slackmojis](https://slackmojis.com/) is a great repository of free Slack emojis.
-
-<!-- TODO transfer relevant parts of: https://github.com/61c-teach/161c-logistics-guides/blob/main/slack.md -->
-
-<!-- TODO joking things about slack -->
