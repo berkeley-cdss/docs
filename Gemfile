@@ -16,7 +16,7 @@ group :jekyll_plugins do
   gem 'jekyll-redirect-from'
   gem 'jekyll-sitemap'
   gem 'jemoji'
-  gem 'just-the-docs', "0.10.0"
+  gem 'just-the-docs', '0.10.0'
 end
 
 # These tools are use for running tests.
