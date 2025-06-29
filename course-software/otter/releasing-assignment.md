@@ -4,9 +4,8 @@ title: Releasing an Assignment
 parent: Otter Grader
 ---
 
-<p class="warning">
+{: .warning}
 This page is a work in progress. This is only the first draft.
-</p>
 
 # Releasing an Assignment using Otter Grader
 
