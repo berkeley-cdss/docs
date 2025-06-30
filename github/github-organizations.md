@@ -1,7 +1,7 @@
 ---
 layout: page
 title: GitHub Organizations
-parent: Using GitHub
+parent: GitHub
 nav_order: 1
 ---
 
@@ -9,7 +9,7 @@ nav_order: 1
 
 ## How Data Science Undergraduate Studies (DSUS) Uses GitHub Organizations
 
-DSUS has a [GitHub Enterprise instance](https://github.com/enterprises/dsus). DSUS is willing to house non-DATA class organizations if there is a need. 
+DSUS has a [GitHub Enterprise instance](https://github.com/enterprises/dsus). DSUS is willing to house non-DATA class organizations if there is a need.
 
 DSUS has one GitHub Organization per class. For courses using DataHub, typically there are three repositories created each semester:
 * **Semester Website.** This public repository holds the Jekyll website for a single semester. Typically named semYY: `spYY | suYY | faYY`.
