@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Gradescope Debugging via SSH
+title: Otter-Gradescope Debugging
 parent: Otter Grader
 ---
 
