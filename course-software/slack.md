@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Slack
-parent: Course Staff Management
+parent: Course Software
+nav_order: 5
 ---
 
 # Slack
@@ -21,7 +22,7 @@ private channels (e.g. #sp25-admin instead of #admin).
 
 UC Berkeley does not currently provide premium versions of Slack (see their [pricing](https://slack.com/pricing)),
 but some courses may decide to use a portion of their budget for this.
-The main benefit is that messages are retained for a long period of time, rather than being deleted.
+The main benefit is that messages are retained for a long period of time, rather than being deleted. Slack has historically offered education discounts that you should look into when estimating cost.
 
 If you would like to purchase a premium Slack subscription:
 
