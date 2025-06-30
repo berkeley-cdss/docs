@@ -1,14 +1,21 @@
 ---
 layout: page
-title: Remove Commits
-parent: Using GitHub
+title: Remove Sensitive Data from a GitHub Repository
+parent: GitHub
 nav_order: 3
 ---
 
-# Oh No! I committed solutions to a public repository and pushed to GitHub
+# Remove Sensitive Data from a GitHub Repository
+
+Oh no! Did you commit and push something sensitive to a public GitHub repository
+(e.g. secrets, credentials, student information, or solutions)? This article is for you.
 
 {: .warning}
 Be careful running the following commands. These are DESTRUCTIVE actions. 🌋
+
+## Using `git-filter-repo` to remove sensitive data from a repository
+
+See this official guide from the [GitHub documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).
 
 ## Remove all commits up to a certain point
 
@@ -18,7 +25,7 @@ Be careful running the following commands. These are DESTRUCTIVE actions. 🌋
     git log
     ```
 
-    The output should have entries that look something like 
+    The output should have entries that look something like
 
     ```
     commit a3cf8b9261a52a8c34098e5316278ce52e40a9b5
@@ -45,7 +52,7 @@ Be careful running the following commands. These are DESTRUCTIVE actions. 🌋
     ```
 
 
-## Remove only specific commits 
+## Remove only specific commits
 
 If you have a mix of "good" and "bad" commits, you'll want to interactively rebase. [Read more about rebasing.](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
 

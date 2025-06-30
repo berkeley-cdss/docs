@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Using GitHub
+title: GitHub
 nav_order: 3
 ---
 
