@@ -25,7 +25,7 @@ The main benefit is that messages are retained for a long period of time, rather
 
 If you would like to purchase a premium Slack subscription:
 
-- **If you are associated with an EECS or CS course**, contact your faculty instructor and see if they have discretionary funds available and submit a purchase request through [ERSO](https://www.erso.berkeley.edu/web/contact-us) intranet. Avoid making a purchase with a personal credit card and reimbursing after the fact, because it may not be approved. See also: UC Berkeley Supply Chain Management [Software & Services Reimbursement Form](https://supplychain.berkeley.edu/procurement/procurement-forms).
+- **If you are associated with an EECS or CS course**, contact your faculty instructor and see if they have discretionary funds available and submit a purchase request through [ERSO](https://www.erso.berkeley.edu/web/contact-us) intranet. Avoid making a purchase with a personal credit card and reimbursing after the fact, because it may not be approved. (See also: UC Berkeley Supply Chain Management [Software & Services Reimbursement Form](https://supplychain.berkeley.edu/procurement/procurement-forms).)
 - **If you are associated with a DATA course**, email ds-courses @ berkeley.edu in advance with the total cost and a brief explanation for why the subscription is necessary.
 
 ## Channels to have
@@ -49,8 +49,8 @@ Below are some suggestions on what channels to have in your course staff Slack, 
 ## Slack etiquette
 
 - **Use [Threads](https://slack.com/help/articles/115000769927-Use-threads-to-organize-discussions-) to organize discussions.**
-- **Avoid messaging people outside of working hours, unless absolutely necessary:** Instead, utilize Slack's [schedule send feature](#useful-slack-features) to send your message the morning/week.
-- **Public channels vs. private channels vs. DMs:** Generally, the instructor(s) and head TA(s) should encourage staff to communicate in public channels as much as possible so that information is not siloed, staff do not have to play a game of telephone, and no one staff member is overloaded with answering questions on Slack. Private channels and DMs should be reserved for conversations that are sensitive.
+- **Avoid messaging people outside of working hours, unless absolutely necessary:** Instead, utilize Slack's [schedule send feature](#useful-slack-features) to send your message during working hours.
+- **Public channels vs. private channels vs. DMs:** Generally, staff should be encouraged by instructors and head TAs to communicate in public channels as much as possible so that information is not siloed, staff do not have to play a game of telephone, and no one staff member is overloaded with answering questions on Slack. Private channels and DMs should be reserved for conversations that are sensitive.
 - **Only ping people when necessary.** Also be aware that @channel will notify everyone in that channel, while @here will only notify people in that channel who are currently active.
 
 ## Useful Slack Features
@@ -72,7 +72,7 @@ Below are some suggestions on what channels to have in your course staff Slack, 
 
 - [EECS Crossroads](https://cs-crossroads.slack.com): An unofficial Slack for UC Berkeley EECS instructors and course staff. Can be useful for asking for cross-course communication, determining if the Soda Hall copy room is currently being used, if you find a lost copy card from another course, getting pedagogical advice, etc.
 - [DS Crossroads](https://dscrossroads.slack.com): An unofficial Slack for UC Berkeley DS instructors and course staff, similar to EECS Crossroads.
-- [UC Tech](https://uctech.slack.com): A Slack to discuss technology used by the entire University of California system. DS instructors and staff can find this workspace useful to talk to the folks who manage DataHub (#ucb-datahubs). See also: #cdss-course-tools, #siteimprove (web accessibility).
+- [UC Tech](https://uctech.slack.com): A Slack to discuss technology used by the entire University of California system. DS instructors and staff can find this workspace useful to talk to the folks who manage DataHub (#ucb-datahubs). #cdss-course-tools and #siteimprove (web accessibility) may also be of interest.
 
 ## Custom Emojis
 
