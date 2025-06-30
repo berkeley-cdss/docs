@@ -9,13 +9,13 @@ nav_order: 3
 
 ## Templates
 
-In the addition to the [templates maintained by Seamless Learning](../seamless-learning/course-websites), CS 161 also maintains a [Jekyll based template](https://github.com/cs161-staff/course-site-template) 
-
+- [Seamless Learning templates](../seamless-learning/course-websites)
+- [CS 161 template](https://github.com/cs161-staff/course-site-template)
 
 ## Accessibility Resources
 
-You are responsible for ensuring that your webpage is accessible. This is both the right thing to do and a legal obligation. 
+You are responsible for ensuring that your webpage is accessible. This is both the right thing to do and a legal obligation.
 
 - [Digital Accessibility Program](https://dap.berkeley.edu/)
 - [WCAG Standards](https://www.w3.org/WAI/standards-guidelines/wcag/)
-- [Color Contrast Checker](https://webaim.org/resources/contrastchecker/) 
+- [Color Contrast Checker](https://webaim.org/resources/contrastchecker/)
