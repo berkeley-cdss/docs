@@ -1,10 +1,13 @@
 # CDSS Common Documentation
 
-[![Deploy Jekyll site to Pages](https://github.com/berkeley-cdss/docs/actions/workflows/jekyll.yml/badge.svg)](https://github.com/berkeley-cdss/docs/actions/workflows/jekyll.yml)[![Run all page tests](https://github.com/berkeley-cdss/docs/actions/workflows/rspec.yml/badge.svg)](https://github.com/berkeley-cdss/docs/actions/workflows/rspec.yml)
+[![Deploy Jekyll site to Pages](https://github.com/berkeley-cdss/docs/actions/workflows/jekyll.yml/badge.svg)](https://github.com/berkeley-cdss/docs/actions/workflows/jekyll.yml)
+
+[![Run all page tests](https://github.com/berkeley-cdss/docs/actions/workflows/rspec.yml/badge.svg)](https://github.com/berkeley-cdss/docs/actions/workflows/rspec.yml)
 
 ## Installation
 
 ### Install Ruby and Bundler
+
 **The berkeley-class-site template requires Ruby 3.3.7 or higher and bundler >= 2.6**
 Install Ruby before continuing. You can check your Ruby version by running:
 
@@ -17,14 +20,20 @@ Prerequisites:
 
 - You have everything that [Jekyll requires](https://jekyllrb.com/docs/installation/)
 - You have installed [Bundler](https://bundler.io/): Run `gem install jekyll bundler`
-- Clone this repository
-- Install dependencies with `bundle install`
+
+## Clone the repository and install dependencies
+
+```bash
+git clone git@github.com:berkeley-cdss/docs.git
+bundle install
+```
 
 ## Usage
 
 To run the site locally, run:
 
-```
+```bash
+cd <PATH_TO_CLONED_REPO>
 bundle exec jekyll serve
 ```
 
@@ -36,7 +45,7 @@ Via [GitHub Pages](https://docs.github.com/en/pages/setting-up-a-github-pages-si
 
 ## Contributing
 
-Please use pull requests! 
+See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## License
 
