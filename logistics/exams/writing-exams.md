@@ -1,11 +1,13 @@
 ---
 layout: page
-title: Tools for Writing Exams
+title: Writing Exams
 parent: Exams
 nav_order: 1
 ---
 
-# Tools for Writing Exams
+# Writing Exams
+
+## Tools for Writing Exams
 
 Many tools have been used over the years for writing exams, including:
 
@@ -17,4 +19,3 @@ Many tools have been used over the years for writing exams, including:
 - [PrairieLearn](https://www.prairielearn.com/)
 - Most recently, [Typst](https://typst.app/), a Latex and Overleaf alternative, has been gaining popularity for its in-browser editor, compiler, and previewer and its local features
     - CS 61C has a Typst exam template [61c-examst](https://github.com/61c-teach/cs61c-examst) developed by Andrew Liu (liu.andrew@)
-
