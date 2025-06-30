@@ -6,14 +6,14 @@ nav_order: 4
 published: true
 ---
 
-# EdStem Tips and Tricks
+# EdStem
 
 [EdStem](https://edstem.org), or Ed for short, is the online course Q&A forum used at UC Berkeley.
 Many TAs know the basic functionality of Ed posts, but here are some lesser known tips and tricks.
 
 ## Official Documentation for Ed
 
-Official documentation for Ed is found [here](https://edstem.org/us/help). 
+Official documentation for Ed is found [here](https://edstem.org/us/help).
 
 ## Additional Features
 

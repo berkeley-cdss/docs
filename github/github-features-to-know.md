@@ -1,7 +1,7 @@
 ---
 layout: page
 title: GitHub Features to Know
-parent: Using GitHub
+parent: GitHub
 nav_order: 2
 ---
 
