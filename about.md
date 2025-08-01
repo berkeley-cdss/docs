@@ -5,7 +5,7 @@ description: About the CDSS common docs, acknowledgements, and contributors
 nav_order: 1
 ---
 
-# About
+# About Us
 
 This site is part of the [Seamless Learning](https://github.com/berkeley-cdss/seamless-learning) initiative.
 
