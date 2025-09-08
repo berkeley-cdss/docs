@@ -17,7 +17,10 @@ The sections tool (formerly the CS 61A sections tool) allows instructors to mana
 Each course can deploy an instance of the sections tool under their course website domain, such as
 CS 61A's [sections.cs61a.org](https://sections.cs61a.org) or DATA C88C's [sections.c88c.org](https://sections.c88c.org).
 
-<!-- TODO: Silas? -->
+You must 
+1. Create a CNAME record where the host is "sections" and the data is "proxy.cs61a.org".
+1. Register the sections subdomain (e.g. sections.course.org) in [auth](https://auth.cs61a.org/).
+1. Correspond with Silas Santini or CS 61A staff to set a certificate on the proxy for the new sections instance. This will require a quick (15 minute) Zoom call and access to the domain (also required for step 1) because we must complete a DNS challenge.
 
 ## Configuring authentication
 
@@ -28,9 +31,18 @@ In order to login to the sections tool, your course must configure authenticatio
 3. Under the Admin > Courses section, there are some text fields to "Activate Auth for a new course." Fill in the information (course name, OkPy endpoint, and bCourses ID).
     - OkPy endpoint is the endpoint configured for your course at [okpy.org](https://okpy.org/)
     - bCourses ID is the string of digits in the URL for your courses's [bCourses](https://bcourses.berkeley.edu/) home page: `https://bcourses.berkeley.edu/courses/<COURSE_ID>`
+1. Ensure your bCourses course is published. If the course is not published, the authentication for the sections tool will not work.
 
 {: .note }
 Ask on the EECS or DS Crossroads Slack if you aren't an admin and need to be added.
+
+## Permissions
+
+Access and permissions to each sections instance is determined by bCourses enrollment with the bCourses course ID set in auth. 
+* Admin permissions are granted to instructors and lead TAs.
+* Staff permissions are granted to instructors and all TAs.
+* Base-level permissions and access are granted to anyone with bCourses enrollment (including observers).
+* If you're not enrolled in bCourses, you can complete the bCourses auth flow, but will end up with an "Internal Server Error". 
 
 ## Configuring your course settings
 
@@ -38,7 +50,7 @@ Ask on the EECS or DS Crossroads Slack if you aren't an admin and need to be add
 2. Login (it will ask you to authorize the sections tool to access your Canvas/bCourses account, click **Authorize**).
 3. Click on the **Admin** page in the navbar.
 4. If you are reconfiguring your course's sections tool, there may be data from the previous semester still there. To reset the tool, in the General tab, click the **Reset Sections Tool** button. **This is destructive, be careful!**
-5. Optional: In the General tab, set the welcome message students will see on the sections tool homepage when they login and click Save.
+5. Optional: In the General tab, set the welcome message students will see on the sections tool homepage when they login and click **Save**.
 6. On the Lab, Discussion, and Tutoring tabs, **we recommend initially turning off all settings** so that students don't enroll in sections before they have been completely set up by staff. Of course, if your course doesn't have certain kinds of sections (e.g. tutoring), it also makes sense to turn those off.
 
 ## Creating sections
@@ -46,8 +58,8 @@ Ask on the EECS or DS Crossroads Slack if you aren't an admin and need to be add
 {: .warning }
 If sections already exist, reimporting them will result in duplicate sections.
 
-- Track this [issue](https://github.com/Cal-CS-61A-Staff/berkeley-cs61a/issues/7788) on GitHub
-- See [Updating existing sections](#updating-existing-sections) for more information
+- Track this [issue](https://github.com/Cal-CS-61A-Staff/berkeley-cs61a/issues/7788) on GitHub. Note: You must be on of the private CS61A repository to see this issue.
+- See [Updating existing sections](#updating-existing-sections) for more information.
 
 1. Go to your course's sections tool instance.
 2. Login (it will ask you to authorize the sections tool to access your Canvas/bCourses account, click **Authorize**).
@@ -67,7 +79,7 @@ If sections already exist, reimporting them will result in duplicate sections.
 ### Enrolling individual students
 
 {: .note }
-Enrolling individual students using this method will move them from any existing sections they're in.
+Enrolling individual students using this method will remove them from any existing sections they're in of the same type (e.g. if you enroll a student in a lab section this way, their enrollment in any other lab sections will be removed).
 
 1. Go to your course's sections tool instance.
 2. Login (it will ask you to authorize the sections tool to access your Canvas/bCourses account, click **Authorize**).
@@ -83,7 +95,7 @@ Enrolling individual students using this method will move them from any existing
 {: .warning}
 Section capacity currently cannot be modified through the UI.
 
-- Track this [issue](https://github.com/Cal-CS-61A-Staff/berkeley-cs61a/issues/7793) on GitHub
+- Track this [issue](https://github.com/Cal-CS-61A-Staff/berkeley-cs61a/issues/7793) on GitHub.  Note: You must be on of the private CS61A repository to see this issue.
 - See [Updating existing sections](#updating-existing-sections) for a workaround
 
 1. Go to your course's sections tool instance.
@@ -100,6 +112,9 @@ Section capacity currently cannot be modified through the UI.
 3. Click into each old section, go to the **Roster** tab, and click on **Copy Roster**.
     - If you are **expanding** section capacities: Click into the corresponding new section with updated capacity, go to the Roster tab, click on **Add Students**, and paste the list of student emails you copied in the previous step to move them into the new section.
     - If you are **decreasing** section capacities: You will need to manually move students around according to whatever your course policies are.
+
+{: .note }
+Staff can enroll students above the set capacity of a section. The section will display no open seats until enrollment goes under capacity. Capacity is most important if you allow students to switch sections themselves using the sections tool.
 
 ## Section customization by staff members
 
