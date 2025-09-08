@@ -43,8 +43,11 @@ Ask on the EECS or DS Crossroads Slack if you aren't an admin and need to be add
 
 ## Creating sections
 
-{: .note }
-If sections already exist, reimporting them will result in [duplicate sections](https://github.com/Cal-CS-61A-Staff/berkeley-cs61a/issues/7788). See [Updating existing sections](#updating-existing-sections).
+{: .warning }
+If sections already exist, reimporting them will result in duplicate sections.
+
+- Track this [issue](https://github.com/Cal-CS-61A-Staff/berkeley-cs61a/issues/7788) on GitHub
+- See [Updating existing sections](#updating-existing-sections) for more information
 
 1. Go to your course's sections tool instance.
 2. Login (it will ask you to authorize the sections tool to access your Canvas/bCourses account, click **Authorize**).
@@ -77,8 +80,11 @@ Enrolling individual students using this method will move them from any existing
 
 ### Updating section metadata
 
-{: .note}
-Section capacity [currently cannot be modified through the UI](https://github.com/Cal-CS-61A-Staff/berkeley-cs61a/issues/7793). See [Updating section capacities](#updating-section-capacities).
+{: .warning}
+Section capacity currently cannot be modified through the UI.
+
+- Track this [issue](https://github.com/Cal-CS-61A-Staff/berkeley-cs61a/issues/7793) on GitHub
+- See [Updating existing sections](#updating-existing-sections) for a workaround
 
 1. Go to your course's sections tool instance.
 2. Login (it will ask you to authorize the sections tool to access your Canvas/bCourses account, click **Authorize**).
