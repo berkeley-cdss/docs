@@ -9,8 +9,13 @@ nav_order: 3
 
 The sections tool (formerly the CS 61A sections tool) allows instructors to manage discussion, lab, and/or tutoring sections and track attendance. It is typically used by CDSS courses with 999 sections where all students enroll in the same lab/discussion section on CalCentral, and then enroll in sections once the semester begins.
 
-- [Public GitHub repository](https://github.com/Cal-CS-61A-Staff/sections), automatically synced with a [directory of the CS 61A private course repository](https://github.com/Cal-CS-61A-Staff/berkeley-cs61a/tree/master/apps/sections)
-- [Sections Tool app (CS 61A instance)](https://sections.cs61a.org/)
+- [Public GitHub repository](https://github.com/Cal-CS-61A-Staff/sections), automatically synced with a [directory of the CS 61A private course repository](https://github.com/Cal-CS-61A-Staff/berkeley-cs61a/tree/master/apps/sections).
+- [Sections Tool app (CS 61A instance)](https://sections.cs61a.org/). You must be enrolled in the CS 61A bCourses course to access. 
+
+{: .note }
+Because the sections tool is a lightweight tool meant to display information about sections to students, allow students to switch their section time to open sections, and track attendance, it does not include a way to determine which students should be enrolled in what sections. 
+
+[Here](https://drive.google.com/file/d/1KcqD3jhjexkPvocGY-O4XPIhJh5C31T2/view?usp=sharing) is an example program for how to assign students to sections. Your course may already maintain a separate script for section assignment.
 
 ## Creating a sections tool instance for your course
 
