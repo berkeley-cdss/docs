@@ -2,7 +2,7 @@
 layout: page
 title: Course Webpages
 parent: Course Software
-nav_order: 3
+nav_order: 5
 ---
 
 # Course Webpages
