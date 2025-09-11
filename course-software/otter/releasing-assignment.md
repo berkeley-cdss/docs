@@ -29,7 +29,7 @@ numpy.__version__
 
 ## Before an assignment is released
 
-Confirm that the source notebook (the one passed to `otter assign`) is accessible.  
+Confirm that the source notebook (the one passed to `otter assign`) is accessible. See [here](../../notebook-accessibility) for more guidance. 
 
 **Run `otter assign` on DataHub.** We do NOT recommend to run this command locally, even if you're using a virtual environment. You can clone the development repo in DataHub via the command line/terminal. 
 

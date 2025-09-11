@@ -2,7 +2,7 @@
 layout: page
 title: Slack
 parent: Course Software
-nav_order: 5
+nav_order: 7
 ---
 
 # Slack

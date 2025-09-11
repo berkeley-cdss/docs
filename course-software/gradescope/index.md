@@ -2,7 +2,7 @@
 layout: page
 title: Gradescope
 parent: Course Software
-nav_order: 1
+nav_order: 2
 ---
 
 # Seamless Learning
