@@ -6,7 +6,7 @@ parent: Otter Grader
 
 # Releasing an Assignment using Otter Grader
 
-This is one of many ways to release an assignment that students will complete on [DataHub](https://datahub.berkeley.edu/) and be graded with [Otter Grader](https://otter-grader.readthedocs.io/en/latest/index.html#). Data Science Undergraduate Education recommends this method where **all development** takes place on DataHub.
+This is one of many ways to release an assignment that students will complete on [DataHub](https://datahub.berkeley.edu/) and be graded with [Otter Grader](https://otter-grader.readthedocs.io/en/latest/index.html#). Data Science Undergraduate Education recommends this method where **all development** takes place on DataHub. This ensures that your development environment perfectly matches the environment that your students will be using to complete their assignments.
 
 Note: If you are working on an assignment that will be released to students on a course specific hub, please supply that hub whenever this guide references "DataHub" or "the hub" For example, Data 100 uses [data100.datahub](https://data100.datahub.berkeley.edu/), instead of [DataHub](https://datahub.berkeley.edu/).
 
@@ -29,14 +29,22 @@ numpy.__version__
 
 ## Before an assignment is released
 
-Confirm that the source notebook (the one passed to `otter assign`) is accessible. See [here](../../notebook-accessibility) for more guidance. 
+1. Confirm that the source notebook (the one passed to `otter assign`) is accessible. See [here]({{ site.baseurl }}/course-software/notebook-accessibility) for more guidance. 
 
-**Run `otter assign` on DataHub.** We do NOT recommend to run this command locally, even if you're using a virtual environment. You can clone the development repo in DataHub via the command line/terminal. 
+1. **Run `otter assign` on DataHub.** We do NOT recommend to run this command locally, even if you're using a virtual environment. You can clone the development repo in DataHub via the command line/terminal. 
 
-Ensure that the solution runs on DataHub without issue; i.e. "Run All Cells" on the solution notebook generated from `otter assign` and ensure that all tests pass. 
+   If you clone via HTTPS, you'll need to generate a [personal access token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) to use in place of your password. Once you create a PAT, keep track of it in a safe space; GitHub won't show you the PAT again. We recommend creating a fine-grained personal access token that expires at the end of the current semester. You should choose "Only select repositories" for the current semester's repositories you will need to access (e.g. dev repo, student repo) with the following permissions:
 
-Ensure that the autograder builds on Gradescope and submit the solution notebook generated from `otter assign` to test the autograder. All tests should pass. 
+   <p align="center">
+   <img src="{{ site.baseurl }}/assets/images/pat-permissions.png" width="600px" alt="personal access token permissions with contents read and write granted">
+   </p>
 
-Only push to the student facing repository once all changes have been made. You don't want to accidentally break an nbgitpuller link.
+   Some GitHub organizations may require the PAT to be approved. If you see that your PAT is pending, reach out to [Silas Santini]({{ site.baseurl }}/about/#silas-santini) via Slack or email.
 
-Create your nbgitpuller link using [this plug in](https://chromewebstore.google.com/detail/datahub-link-generator/ijbgangngghdanhcnaliiobbiffocahf). Ensure that the JupyterHub URL is for the intended DataHub. You should redownload this plug in every semester because updates are unfortunately not automatic.
+1. Ensure that the solution runs on DataHub without issue; i.e. "Run All Cells" on the solution notebook generated from `otter assign` and ensure that all tests pass. 
+
+1. Ensure that the autograder builds on Gradescope and submit the solution notebook generated from `otter assign` to test the autograder. All tests should pass. 
+
+1. Only push to the student facing repository once all changes have been made. You don't want to accidentally break an nbgitpuller link.
+
+   Create your nbgitpuller link using [this plug in](https://chromewebstore.google.com/detail/datahub-link-generator/ijbgangngghdanhcnaliiobbiffocahf). Ensure that the JupyterHub URL is for the intended DataHub. You should redownload this plug in every semester because updates are unfortunately not automatic.
