@@ -18,7 +18,7 @@ It is also possible that a student's submission has changed since the public tes
 
 2. SSH into the grading container using the provided command from the blue box at the top of the screen with the submission. The command will look something like `ssh username@remote-host -p password`. What is printed to your terminal after SSH-ing into the grading container is useful information. Read it!
 
-3. Activate the virtual environment from `requirements.txt` in the grading container using `conda activate otter-env`.
+3. Activate the virtual environment from `requirements.txt` in the grading container using `mamba activate otter-env` or `conda activate otter-env` for older otter versions. 
 
 4. If `jupyterlab` was not an included requirement, run `pip install jupyterlab`. You can check if `jupyterlab` was installed by running `conda list | grep jupyterlab`.
 
@@ -28,7 +28,7 @@ It is also possible that a student's submission has changed since the public tes
 
 7. Access JupyterLab locally in your browser via the given link from the output from Step 4. Choose the link beginning with `http://localhost:8888/lab?token=...`
 
-Note: If you open a terminal from JupyterLab you will need to rerun `conda activate otter-env` if you see `(base)` on the lefthand side of the prompt.
+Note: If you open a terminal from JupyterLab you will need to rerun `mamba activate otter-env`/`conda activate otter-env` if you see `(base)` on the lefthand side of the prompt.
 
 ## Run the autograder on the student's submission
 
