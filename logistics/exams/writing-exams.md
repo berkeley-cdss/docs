@@ -45,11 +45,11 @@ Many tools have been used over the years for writing exams, including the follow
 - **Consider how your question would be graded. Some questions to consider:**
     - Are there multiple possible solutions to the problem? If there are, that could make grading more difficult. Consider changing things like the skeleton code or question format to restrict the possible answer space.
     - How long would it take to grade?
-        - MCQ and multi-select are generally fast to grade using [Gradescope's grouping feature](https://guides.gradescope.com/hc/en-us/articles/24838908062093-AI-Assisted-Grading-and-Answer-Groups)
-        - Short answer and long answer take significantly longer
+        - MCQ and multi-select are generally fast to grade using [Gradescope's grouping feature](https://guides.gradescope.com/hc/en-us/articles/24838908062093-AI-Assisted-Grading-and-Answer-Groups).
+        - Short answer and long answer take significantly longer.
     - How many points should each subpart be worth?
-        - Generally award more points for problems that assess higher-order thinking skills
-        - Generally avoid fractional points (e.g. 1.5 points) unless needed
+        - Generally award more points for problems that assess higher-order thinking skills.
+        - Generally avoid fractional points (e.g. 1.5 points) unless needed.
     - What rubric would you use? What partial credit can be awarded, if any? Do you need a special rubric for questions that build off of each other?
 - **Be careful with questions that build off of each other.**
     - The benefit of a question like this is that it is more applicable to real life and assesses higher-order thinking skills.
@@ -71,14 +71,14 @@ The following are formatting considerations for paper/pencil exams:
 - **Be aware of page breaks.** If you question spans multiple pages, be aware that you may be forcing students to flip back and forth, which can be time-consuming and be noisy distractions in the exam room. On the other hand, you may want to insert your own blank pages to ensure that the first page is the cover page of the exam, and the last page is a blank page. This prevents students from seeing information about the exam questions until they are told to open their exam packets by the proctors.
 - **Give students as much space as you can give them to write their answers.** People have different handwriting and handwriting generally takes up more space than printed text. Make answer blanks or answer boxes big! This also helps your staff grade more effectively because students don't squish their answer into small spaces.
 - **Be careful not to accidentally give away information to students.** For example, the size of an answer blank should not give students hints as to how much code they should write in that blank. Avoid awarding points for multi-select questions that suggests how many correct options there are.
-- **Consider how accessible your exam format is.** For example, exam PDFs will sometimes include images. While images can help present information in a more intuitive way than text, for students who have vision impairments and use screen readers, you should provide an image description or alternative format. If something on the exam is text or code, instead of putting it in the image, just put it in the actual PDF document; only put information in the image that absolutely must be an image.
+- **Consider how accessible your exam format is.** For example, exam PDFs will sometimes include images. While images can help present information in a more intuitive way than text, for students who have vision impairments and use screen readers, you should provide an image description or alternative format. If something on the exam is text or code, instead of putting it in the image, just put it in the actual PDF document; only put information in an image that absolutely must be an image.
 
 ## Quality Assurance (QA)
 
 Once you have written a draft of your exam, you should always:
 
-1. Verify that the solutions you wrote to the problems are actually correct
-2. Verify that the exam could reasonably be done by students in the amount of time you plan to give them (we will call this "feasibility")
+1. Verify that the solutions you wrote to the problems are actually correct.
+2. Verify that the exam could reasonably be done by students in the amount of time you plan to give them (we will call this "feasibility").
 
 ### Verifying Correctness
 
