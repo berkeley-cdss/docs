@@ -79,6 +79,9 @@ However, even after you have scanned the exams, there are some things to conside
     - `+0.5 Partial: lst[i]`
     - `+0 Incorrect`
     - `+0 Blank`
+- **Be aware that Gradescope autograding feature for online assignments is very particular.** For example, if you have a short answer question box, it will only mark answers correct if the string is an exact match. If there is extra whitespace or difference in uppercase vs. lowercase, it will mark the answer as wrong. Thus, you may wish to manually grade all short answer and long answer text boxes.
+- **If you update the rubric while grading, make sure to go back and check previously graded submissions** to see if the rubric changes apply to those submissions.
+- **When grading exams with multiple versions on Gradescope, you can import the rubric from the first version of the exam.**
 
 ### Multi-Select Question Grading Schemes
 
