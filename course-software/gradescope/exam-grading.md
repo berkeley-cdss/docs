@@ -79,7 +79,7 @@ However, even after you have scanned the exams, there are some things to conside
     - `+0.5 Partial: lst[i]`
     - `+0 Incorrect`
     - `+0 Blank`
-- **Be aware that Gradescope autograding feature for online assignments is very particular.** For example, if you have a short answer question box, it will only mark answers correct if the string is an exact match. If there is extra whitespace or difference in uppercase vs. lowercase, it will mark the answer as wrong. Thus, you may wish to manually grade all short answer and long answer text boxes.
+- **Be aware that Gradescope autograding feature for online assignments is very particular.** For example, if you have a short answer question box, it will only mark answers correct if the string is an exact match. In the assignment [settings](https://guides.gradescope.com/hc/en-us/articles/22066784117901-Grading-Online-Assignments#h_01HH379F1XK4P0TC6G2QN41P36), you can strip leading/trailing whitespace and enable case insensitive matching for short answer questions. Otherwise, you may wish to manually grade all short and long answer text boxes. Similarly, for multi-select questions, Gradescope will autograde those using the all or nothing [grading scheme](#multi-select-question-grading-schemes); if you wish to use a different scheme you will need to manually grade those questions.
 - **If you update the rubric while grading, make sure to go back and check previously graded submissions** to see if the rubric changes apply to those submissions.
 - **When grading exams with multiple versions on Gradescope, you can import the rubric from the first version of the exam.**
 
@@ -120,9 +120,12 @@ what percentage of complete understanding does the student have to grasp to arri
 These questions will be left as a thought experiment for the reader, who is encouraged to think about
 their own exams and how framing exam grading in this way might influence rubrics.
 
-## Relevant Gradescope Docs
+## Resources
 
-- [Managing Assignments](https://guides.gradescope.com/hc/en-us/sections/21586609950477-Managing-Assignments)
-- [Exam/Quiz Assignments](https://guides.gradescope.com/hc/en-us/sections/27893603774605-Exam-Quiz-Assignments)
-- [Answer Groups](https://guides.gradescope.com/hc/en-us/articles/24838908062093-AI-Assisted-Grading-and-Answer-Groups)
-- [Rubrics](https://guides.gradescope.com/hc/en-us/articles/22249389005709-Grading-submissions-with-rubrics)
+- Relevant Gradescope docs
+    - [Managing Assignments](https://guides.gradescope.com/hc/en-us/sections/21586609950477-Managing-Assignments)
+    - [Exam/Quiz Assignments](https://guides.gradescope.com/hc/en-us/sections/27893603774605-Exam-Quiz-Assignments)
+    - [Answer Groups](https://guides.gradescope.com/hc/en-us/articles/24838908062093-AI-Assisted-Grading-and-Answer-Groups)
+    - [Rubrics](https://guides.gradescope.com/hc/en-us/articles/22249389005709-Grading-submissions-with-rubrics)
+
+<!-- TODO add eric's docs, can view @berkeley.edu only -->
