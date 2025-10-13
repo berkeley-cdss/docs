@@ -97,7 +97,7 @@ A quick note on point assignment. The purpose of an exam is to test a student's 
 The most objective way we currently have is assigning points on questions for student answers.
 On one hand, the most important part of exam grading is having a consistent rubric that is applied equitably
 for every student. In addition to this though, it matters too that the answers that are neither fully correct
-nor fully incorrect are assigned points roughly proportionally to how correct they are.
+nor fully incorrect are assigned points roughly proportionate to how correct they are.
 
 For instance, suppose you give students a question, "Explain how an inode-based file system works."
 A fully correct response might be one that briefly describes direct pointers and indirect pointers,
