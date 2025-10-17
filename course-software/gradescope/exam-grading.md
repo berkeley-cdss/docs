@@ -2,25 +2,13 @@
 layout: page
 title: Exam Grading
 parent: Gradescope
-nav_order: 1
+nav_order: 2
 ---
 
 # Exam Grading
 
 This section will outline the specific protocols pertaining to grading exams on Gradescope, but the tips
 will be useful for written assignment grading as well.
-
-## Creating an Outline
-
-For all structured exams, Gradescope will ask you to upload a PDF of the exam to create an outline.
-Part of this includes finding which region of the exam you want the question to encompass.
-
-<img src="{{ site.baseurl }}/assets/images/gradescope/exam-outline.png" width="500px" alt="gradescope exam outline">
-
-The box size you choose to include depends on the type of question you're grading. If the question requires a
-single specific answer (e.g. `8 KiB` or 30 sectors), you may want to restrict the box to the answer box
-itself. If the question is a short or long answer however, it is fine to include the question, as it makes it
-easier for other graders to review the entire rubric en masse. The next section will explain why.
 
 ## Answer Groups
 
