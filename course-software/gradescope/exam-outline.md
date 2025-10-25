@@ -48,10 +48,13 @@ For all structured exams, Gradescope will ask you to upload a PDF of the exam to
 {: .note }
 > The **"+"** button is a useful shortcut! It creates a new subpart with the same dimensions as the previous box, positioned directly below it. This saves time when you have multiple subparts with similar answer areas.
 
+{: .note }
+> If you have auxiliary questions such as an honor code, be aware that this will affect the question numbering on Gradescope. To avoid confusing students and staff when talking about question numbers, we recommend putting all auxiliary questions at the end of the Gradescope outline. For example, if there are 5 real questions on the exam, this ensures Q1 - Q5 corresponds to that on Gradescope and Q6 would be the honor code.
+
 ## Review the Outline
 
 After creating all your question regions, it's important to review the outline before uploading exams.
 
 1. At the top right corner, you should see the total number of points for the exam. **Confirm that number is correct.**
-2. Click on **"Create Rubric"** on the left side bar.
+2. Click on **"Create Rubric"** on the left sidebar.
 3. Scroll down and make sure that every question was properly cropped. Go back to the outline and adjust as necessary.
