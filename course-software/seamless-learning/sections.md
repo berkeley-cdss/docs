@@ -25,7 +25,7 @@ CS 61A's [sections.cs61a.org](https://sections.cs61a.org) or DATA C88C's [sectio
 You must 
 1. Create a CNAME record where the host is "sections" and the data is "proxy.cs61a.org".
 1. Register the sections subdomain (e.g. sections.course.org) in [auth](https://auth.cs61a.org/).
-1. Correspond with Silas Santini or CS 61A staff to set a certificate on the proxy for the new sections instance. This will require a quick (15 minute) Zoom call and access to the domain (also required for step 1) because we must complete a DNS challenge.
+1. Correspond with Silas Santini or CS 61A staff if sections.course.org is not up within 24 hours. We will ensure that a certificate is correctly set on the proxy for the new sections instance. 
 
 ## Configuring authentication
 
