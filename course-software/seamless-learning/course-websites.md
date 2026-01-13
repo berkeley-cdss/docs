@@ -28,6 +28,6 @@ Statistics courses may prefer a Quarto-based course site template. Seamless Lear
 
 ## MyST Course Site Template
 
-Statistics courses may also prefer a MyST-based course site template:
+Statistics courses may also prefer a MyST-based course site template. If this looks familiar, it's because MyST is the engine between Jupyter Book v2 which powers many DATA textbooks.
 
 - [GitHub repository](https://github.com/berkeley-cdss/course-site-myst)
