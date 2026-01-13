@@ -20,7 +20,7 @@ Because the sections tool is a lightweight tool meant to display information abo
 ## Creating a sections tool instance for your course
 
 Each course can deploy an instance of the sections tool under their course website domain, such as
-CS 61A's [sections.cs61a.org](https://sections.cs61a.org) or DATA C88C's [sections.c88c.org](https://sections.c88c.org).
+CS 61A's [sections.cs61a.org](https://sections.cs61a.org) or DATA C88C's [sections.c88c.org](https://sections.c88c.org). This only needs to be done once. If your sections site is already configured, skip this section.
 
 You must 
 1. Create a CNAME record where the host is "sections" and the data is "proxy.cs61a.org".
