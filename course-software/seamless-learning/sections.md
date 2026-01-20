@@ -37,10 +37,11 @@ Each course can deploy an instance of the sections tool under their course websi
 CS 61A's [sections.cs61a.org](https://sections.cs61a.org) or DATA C88C's [sections.c88c.org](https://sections.c88c.org). You only need to register the domain once. You should first configure authentication (above), then register the domain if needed.
 
 You must 
-1. Create a CNAME record where the host is "sections" and the data is "proxy.cs61a.org".
+1. Correspond with Silas Santini as soon as possible letting them know the domain you'd like to use. This is necessary to add a redirect URI to the bCourses auth key.
+2. Create a CNAME record where the host is "sections" and the data is "proxy.cs61a.org".
 1. Register the sections subdomain (e.g. sections.course.org) in [auth](https://auth.cs61a.org/).
 1. Verify that your domain is good to go by visiting [domains](sections.course.org). Ensure that you've previously logged into auth with an email that is an admin for the course you'd like to check on. You should see something like `sections.course.org (sections) - SUCCESS`. 
-1. If something other than `SUCCESS` is displayed, first check that the CNAME record is visible when you run `dig sections.course.org` in a terminal. Once the CNAME record is visible with `dig`, try deleting and re-adding the domain on auth which will retrigger certbot and fix the issue. Correspond with Silas Santini or CS 61A staff if issues persist. 
+1. If something other than `SUCCESS` is displayed, first check that the CNAME record is visible when you run `dig sections.course.org` in a terminal. Once the CNAME record is visible with `dig`, try deleting and re-adding the domain on auth which will retrigger certbot and fix the issue. Correspond with Silas Santini or CS 61A staff if issues persist.
 
 ## Permissions
 
