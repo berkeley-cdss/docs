@@ -17,16 +17,6 @@ Because the sections tool is a lightweight tool meant to display information abo
 
 [Here](https://drive.google.com/file/d/1KcqD3jhjexkPvocGY-O4XPIhJh5C31T2/view?usp=sharing) is an example program for how to assign students to sections. Your course may already maintain a separate script for section assignment.
 
-## Creating a sections tool instance for your course
-
-Each course can deploy an instance of the sections tool under their course website domain, such as
-CS 61A's [sections.cs61a.org](https://sections.cs61a.org) or DATA C88C's [sections.c88c.org](https://sections.c88c.org). This only needs to be done once. If your sections site is already configured, skip this section.
-
-You must 
-1. Create a CNAME record where the host is "sections" and the data is "proxy.cs61a.org".
-1. Register the sections subdomain (e.g. sections.course.org) in [auth](https://auth.cs61a.org/).
-1. Correspond with Silas Santini or CS 61A staff if sections.course.org is not up within 24 hours. We will ensure that a certificate is correctly set on the proxy for the new sections instance. 
-
 ## Configuring authentication
 
 In order to login to the sections tool, your course must configure authentication through [auth.cs61a.org](https://auth.cs61a.org). An existing CS 61A Auth course administrator can activate auth for your course (or replace an existing auth endpoint from a previous semester) by following these instructions:
@@ -36,10 +26,21 @@ In order to login to the sections tool, your course must configure authenticatio
 3. Under the Admin > Courses section, there are some text fields to "Activate Auth for a new course." Fill in the information (course name, OkPy endpoint, and bCourses ID).
     - OkPy endpoint is the endpoint configured for your course at [okpy.org](https://okpy.org/)
     - bCourses ID is the string of digits in the URL for your courses's [bCourses](https://bcourses.berkeley.edu/) home page: `https://bcourses.berkeley.edu/courses/<COURSE_ID>`
-1. Ensure your bCourses course is published. If the course is not published, the authentication for the sections tool will not work.
+1. Ensure your bCourses course is published. If the course is not published, authentication for the sections tool will not work.
 
 {: .note }
 Ask on the EECS or DS Crossroads Slack if you aren't an admin and need to be added.
+
+## Register your course's sections domain
+
+Each course can deploy an instance of the sections tool under their course website domain, such as
+CS 61A's [sections.cs61a.org](https://sections.cs61a.org) or DATA C88C's [sections.c88c.org](https://sections.c88c.org). You only need to register the domain once. You should first configure authentication (above), then register the domain if needed.
+
+You must 
+1. Create a CNAME record where the host is "sections" and the data is "proxy.cs61a.org".
+1. Register the sections subdomain (e.g. sections.course.org) in [auth](https://auth.cs61a.org/).
+1. Verify that your domain is good to go by visiting [domains](sections.course.org). Ensure that you've previously logged into auth with an email that is an admin for the course you'd like to check on. You should see something like `sections.course.org (sections) - SUCCESS`. 
+1. If something other than `SUCCESS` is displayed, first check that the CNAME record is visible when you run `dig sections.course.org` in a terminal. Once the CNAME record is visible with `dig`, try deleting and re-adding the domain on auth which will retrigger certbot and fix the issue. Correspond with Silas Santini or CS 61A staff if issues persist. 
 
 ## Permissions
 
