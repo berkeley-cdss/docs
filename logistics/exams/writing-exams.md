@@ -20,6 +20,7 @@ Many tools have been used over the years for writing exams, including the follow
     - The examtool Markdown syntax
 - Most recently, [Typst](https://typst.app/), a Latex and Overleaf alternative, has been gaining popularity for its in-browser editor, compiler, and previewer and its local features
     - CS 61C has a Typst exam template [61c-examst](https://github.com/61c-teach/cs61c-examst) developed by Andrew Liu (liu.andrew@)
+    - Data 8 has an official Typst library [exm](https://github.com/data-8/exm) developed by Tim Xie (xie@). See more info on the [Worksheets page](../../worksheets)
 
 ### Online Exams
 
