@@ -17,6 +17,8 @@ You can access the accessibility checker on the [Accessibility DataHub](https://
 
 Feel free to experiment with the AI included, but note that the models aren't among the most powerful and may not be the most useful for generating alt text.
 
+You can also check an **entire GitHub repository** with this [web app](https://jupycheck.vercel.app/). This web app uses the same JupyterLab extension discussed above. 
+
 ## General Jupyter Accessibility 
 
 Unforuntately, Jupyter software is not inherently accessible. [Check here](https://jupyter-accessibility.readthedocs.io/en/latest/) to see the status of the Jupyter project's accessibility efforts.
