@@ -10,6 +10,10 @@ nav_order: 3
 Oh no! Did you commit and push something sensitive to a public GitHub repository
 (e.g. secrets, credentials, student information, or solutions)? This article is for you.
 
+Even if a repository is private, you still should NOT store student information on GitHub. If you have a script that interacts with student information, you *should* track that script via git/GitHub, but you *should not* track any associated CSV or other files that contain student information. It is useful to keep track of the format of the data, and you may do so by describing the data in your script or by tracking a data file that does not contain any student information. For example, you may track a CSV file that only contains the headers [(example)](https://github.com/pancakereport/apps-script/blob/main/tutor-hours-tracking/FL25-Hires-empty.csv). If you need to share or otherwise preserve data files containing student information, we recommend using Google Drive which [has been approved](https://bconnected.berkeley.edu/privacy-security/keeping-sensitive-data-safe) for [P3 data](https://security.berkeley.edu/data-classification-standard).
+
+Regardless of a repository's visibility, it is not enough to delete files containing student information; You must also delete the git history for those files by following the steps below. If your repository has had any pull requests with the student information, you must additionally follow [these steps](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository#fully-removing-the-data-from-github) after completing the below.
+
 {: .warning}
 Be careful running the following commands. These are DESTRUCTIVE actions. 🌋
 
