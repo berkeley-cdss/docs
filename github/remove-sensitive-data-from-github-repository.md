@@ -17,11 +17,11 @@ Regardless of a repository's visibility, it is not enough to delete files contai
 {: .warning}
 Be careful running the following commands. These are DESTRUCTIVE actions. 🌋
 
-## Using `git-filter-repo` to remove sensitive data from a repository
+## Option 1 (Recommended): Use `git-filter-repo`
 
-See this official guide from the [GitHub documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).
+Follow this official guide from the [GitHub documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).
 
-## Remove all commits up to a certain point
+## Option 2: Remove all commits up to a certain point
 
 1. Find the last "good" commit hash by running:
 
@@ -56,7 +56,7 @@ See this official guide from the [GitHub documentation](https://docs.github.com/
     ```
 
 
-## Remove only specific commits
+## Option 3: Remove only specific commits
 
 If you have a mix of "good" and "bad" commits, you'll want to interactively rebase. [Read more about rebasing.](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
 
