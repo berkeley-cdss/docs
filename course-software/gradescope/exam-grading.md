@@ -48,7 +48,7 @@ students wrote each response. Such is useful data for the future.
 
 ## Creating Rubrics
 
-Hopefully during the [exam writing]({% link logistics/exams/writing-exams.md %}) phase,
+Hopefully during the [exam writing]({% link course-logistics/exams/writing-exams.md %}) phase,
 the exam writers wrote the question with some idea of how they wished to grade the question.
 However, even after you have scanned the exams, there are some things to consider:
 
