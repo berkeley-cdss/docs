@@ -48,6 +48,7 @@ plugins:
   - jekyll-github-metadata
   - jekyll-include-cache
   - jekyll-jupyter-notebook
+  - jekyll-target-blank
 
 # Default layouts for each collection type
 defaults:

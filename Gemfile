@@ -17,6 +17,7 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jemoji'
   gem 'just-the-docs', '0.10.0'
+  gem 'jekyll-target-blank'
 end
 
 # These tools are use for running tests.
