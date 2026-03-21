@@ -16,7 +16,7 @@ group :jekyll_plugins do
   gem 'jekyll-redirect-from'
   gem 'jekyll-sitemap'
   gem 'jemoji'
-  gem 'just-the-docs', '0.10.0'
+  gem 'just-the-docs', '0.12.0'
   gem 'jekyll-target-blank'
 end
 
