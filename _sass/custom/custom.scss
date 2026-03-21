@@ -24,3 +24,13 @@ div.highlighter-rouge div.highlight {
 
 // Place all of your course-specific CSS here.
 @import './course_overrides';
+
+// fix Note block colors for dark mode
+p.note, blockquote.note {
+  border-left-color: #7253ed; 
+
+}
+p.note::before {
+  color: #7253ed;
+  font-weight: bold;
+}
