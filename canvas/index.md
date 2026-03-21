@@ -7,6 +7,6 @@ nav_order: 3
 # Canvas
 
 ## Quick Links
-* https://community.instructure.com/en/categories/canvas
-* https://community.instructure.com/en/kb/canvas-resource
-* https://developerdocs.instructure.com/services/canvas 
+* [Community Page](https://community.instructure.com/en/categories/canvas)
+* [Resource Page](https://community.instructure.com/en/kb/canvas-resource)
+* [Developer Documentation](https://developerdocs.instructure.com/services/canvas)
