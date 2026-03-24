@@ -13,9 +13,13 @@ nav_order: 3
 * [SIS Import Format Documentation](https://developerdocs.instructure.com/services/canvas/sis/file.sis_csv)
 * SIS Sheet (Non-students):
 
+<div class="table-wrapper" tabindex="0" role="region" aria-label="User Data Table">
+
 | user_id | login_id | email | first_name | last_name | full_name | sortable_name | canvas_password_notification | declared_user_type | status | account_id | authentication_provider_id |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | UID:952109 | ball | ball@berkeley.edu | Michael | Ball | Michael Ball | Ball, Michael | TRUE | administrative | active | 1 | canvas |
+
+</div>
 
 Likely, you won't have the permissions to add users or promote to admin as linked above on the production bCourses Canvas instance, but these articles are still useful for use in the [Sandbox]({{ 'canvas/sandbox' | relative_url }}). For production bCourses, check out:
 * [How do I request an administrator role in bCourses?](https://berkeley.service-now.com/kb_view.do?sysparm_article=KB0011247)
