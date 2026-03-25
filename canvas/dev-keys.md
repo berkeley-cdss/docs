@@ -22,7 +22,7 @@ Individual persons do not need individual dev keys; you can (and should) re-use 
 We recommend that scoped keys are turned on even during development. Keys must be scoped in production, so doing this step early will decrease headaches later. If you have separate development efforts on the same app happening simultaneously that require different scopes, you may want to create separate dev keys. However, please keep dev keys created to a minimum. 
 
 ## Use in Production
-Once you have verified your workflow in your development environment using a dev key for the Sandbox AND you've determined a minimal set of scopes, you're ready to request use in production. A staff (non-student) or faculty member should reach out to bcourseshelp AT berkeley DOT edu.  The process of granting a production key includes Docusign. 
+Once you have verified your workflow in your development environment using a dev key for the Sandbox AND you've determined a minimal set of scopes, you're ready to request use in production. A staff or faculty member (not a student/student employee) should fill out [this form](https://powerforms.docusign.net/72a3e934-def8-4044-9db4-9b5e5f207efa?env=na3&acct=b7f73816-7366-4325-b4a2-b50e39d77d81&accountId=b7f73816-7366-4325-b4a2-b50e39d77d81&recipientLang=en) which will open a ticket with the bCourses team.
 
 ## More on OAuth2
 [Canvas Oauth2 Overview](https://developerdocs.instructure.com/services/canvas/oauth2/file.oauth)
