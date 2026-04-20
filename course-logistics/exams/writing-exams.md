@@ -57,11 +57,6 @@ Many tools have been used over the years for writing exams, including the follow
     - The downside of a question like this is that you may accidentally put students in *double jeopardy* where a mistake in an earlier subpart causes them to have the wrong answer in a later subpart, even if the procedure they did in the later subpart was correct
 - **Consider allowing students access to a staff-created reference sheet and/or allowing students to bring their own self-made cheatsheets** to emphasize higher-order thinking skills on the exam rather than memorization.
 
-See also posts from CS 161's Pedagogy Blog:
-
-- [Exam Writing I](https://pedagogy.cs161.org/2022/02/06/exam-writing-i/)
-- [Making Reference Sheets I](https://pedagogy.cs161.org/2022/02/07/making-reference-sheets-i/)
-
 ## Formatting Considerations
 
 The following are formatting considerations for paper/pencil exams:
@@ -103,3 +98,13 @@ We recommend that you **do multiple cycles of feedback and iteration** so that t
 - Typst [comments](https://typst.app/docs/web-app/comments/) (requires Typst Pro subscription)
 
 Even after multiple rounds of review, there can sometimes still be typos, mistakes, or ambiguous text in the exam. Thus, we also recommend creating a **clarifications document** that can be projected to students in their exam rooms, and that is updated live by staff members as they receive questions during the exam (if you decide to take questions during the exam). A clarifications doc has the added benefit of being a record of which questions to flag when grading (e.g. if the question had a fundamental problem in it, you may wish to drop it). Additionally, if you choose to release a final, cleaned up version of the exam and solutions PDFs, the issues in the clarifications doc should be fixed so that if future students use it as a studying resource, they will not run into the same issues.
+
+## Resources
+
+- CS 161's Pedagogy Blog
+    - [Exam Writing I](https://pedagogy.cs161.org/2022/02/06/exam-writing-i/)
+    - [Making Reference Sheets I](https://pedagogy.cs161.org/2022/02/07/making-reference-sheets-i/)
+- Resources from [CS 302: Designing CS Education](https://cs302.org)
+    - [The CS-Ed Podcast S1xE2: Designing Exams with Dan Garcia](https://open.spotify.com/episode/3nBhKHJXwPdLhdlQWaDcEg?si=58ed42e49fd4443c)
+    - [Examining fairness in CS assessments by Matt J. Davidson](https://medium.com/bits-and-behavior/examining-fairness-in-cs-assessments-ce87975c48ca); see also [item response theory (IRT)](https://en.wikipedia.org/wiki/Item_response_theory)
+    - [Critically Conscious Computing Ch. 3: Critical CS Education Assessment by Matt J. Davidson and Amy J. Ko](https://criticallyconsciouscomputing.org/assessment)
