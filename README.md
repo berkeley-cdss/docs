@@ -1,4 +1,5 @@
 # CDSS Common Documentation
+> [https://berkeley-cdss.github.io/docs/](https://berkeley-cdss.github.io/docs/)
 
 [![Deploy Jekyll site to Pages](https://github.com/berkeley-cdss/docs/actions/workflows/jekyll.yml/badge.svg)](https://github.com/berkeley-cdss/docs/actions/workflows/jekyll.yml)
 
