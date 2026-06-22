@@ -9,7 +9,7 @@ nav_order: 4
 
 ## Jupyter Notebook Accessibility Checker
 
-The DataHub team developed an [accessibility checker](https://github.com/berkeley-dsep-infra/jupyterlab-a11y-checker) for Jupyter Notebooks. This checker can identify and either suggest fixes for accessibility issues or provide an interface for you to fix issues yourself. A list of the accessibility issues this checker can aid with is [here](https://github.com/berkeley-dsep-infra/jupyterlab-a11y-checker/blob/main/doc/rules.md).
+The DataHub team developed an [accessibility checker](https://github.com/berkeley-cdss/jupyterlab-a11y-checker) for Jupyter Notebooks. This checker can identify and either suggest fixes for accessibility issues or provide an interface for you to fix issues yourself. A list of the accessibility issues this checker can aid with is [here](https://github.com/berkeley-cdss/jupyterlab-a11y-checker/blob/main/docs/components/rules.md).
 
 You can access the accessibility checker on the [Accessibility DataHub](https://a11y.datahub.berkeley.edu/). Click on the following icon on the right hand side of the window. Then, click "Analyze Notebook".
 
