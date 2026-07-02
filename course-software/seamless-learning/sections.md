@@ -128,3 +128,22 @@ Staff can enroll students above the set capacity of a section. The section will 
 Staff members should be able to login to the sections tool and customize information about their section,
 such as writing a brief blurb introducing themselves (which will be displayed to students), providing a meeting link
 if the section is online, or creating an enrollment code.
+
+## API Access
+
+You can programmatically access information about sections (such as attendance) via API. To generate a secret, visit [auth.cs61a.org](https://auth.cs61a.org) and find the "Clients" section for your course. Once you've created a new client, make sure to treat your secret key with care; do not share with others. If a key has been leaked, delete it immediately. You can use this key to make requests like the following
+
+```
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{
+        "secret": "", # the secret generated from auth
+        "email": "", # your email; must have access to auth
+        "args": {
+            "email": "<student>@berkeley.edu"
+        }
+      }' \
+  "https://tutoring.cs61a.org/api/sudo/get_student_discussion_attendance" # the endpoint
+```
+
+You can see what API endpoints are available by looking for the `@api` decorator in the [public GitHub repo](https://github.com/Cal-CS-61A-Staff/sections).
