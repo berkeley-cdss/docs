@@ -13,7 +13,7 @@ The sections tool (formerly the CS 61A sections tool) allows instructors to mana
 - [Sections Tool app (CS 61A instance)](https://sections.cs61a.org/). You must be enrolled in the CS 61A bCourses course to access. 
 
 {: .note }
-Because the sections tool is a lightweight tool meant to display information about sections to students, allow students to switch their section time to open sections, and track attendance, it does not include a way to determine which students should be enrolled in what sections. 
+Because the sections tool is a lightweight tool meant to display information about sections to students, allow students to switch their section time to open sections, and track attendance, it does not include a way for staff to programmatically enroll students into sections. Students can directly enroll in sections, however.
 
 [Here](https://drive.google.com/file/d/1KcqD3jhjexkPvocGY-O4XPIhJh5C31T2/view?usp=sharing) is an example program for how to assign students to sections. Your course may already maintain a separate script for section assignment.
 
