@@ -49,7 +49,7 @@ Access and permissions to each sections instance is determined by bCourses enrol
 * Admin permissions are granted to instructors and lead TAs.
 * Staff permissions are granted to instructors and all TAs.
 * Base-level permissions and access are granted to anyone with bCourses enrollment (including observers).
-* If you're not enrolled in bCourses, you can complete the bCourses auth flow, but will end up with an "Internal Server Error". 
+* If you're not enrolled in bCourses, you can complete the bCourses auth flow, but will end up with a 403 "Forbidden". 
 
 ## Configuring your course settings
 
