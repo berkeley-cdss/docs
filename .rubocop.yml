@@ -16,3 +16,8 @@ Metrics/MethodLength:
 
 Metrics/PerceivedComplexity:
   Enabled: false
+
+# spec_summary.rb prints the a11y test summary to the CI log on purpose.
+RSpec/Output:
+  Exclude:
+    - spec/support/spec_summary.rb
