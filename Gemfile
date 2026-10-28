@@ -15,9 +15,9 @@ group :jekyll_plugins do
   gem 'jekyll-jupyter-notebook'
   gem 'jekyll-redirect-from'
   gem 'jekyll-sitemap'
+  gem 'jekyll-target-blank'
   gem 'jemoji'
   gem 'just-the-docs', '0.12.0'
-  gem 'jekyll-target-blank'
 end
 
 # These tools are use for running tests.

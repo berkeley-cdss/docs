@@ -16,3 +16,8 @@ Metrics/MethodLength:
 
 Metrics/PerceivedComplexity:
   Enabled: false
+
+# Helpers that report on the site build and the a11y results in the CI log.
+RSpec/Output:
+  Exclude:
+    - spec/support/**/*.rb
