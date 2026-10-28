@@ -62,18 +62,28 @@ Access and permissions to each sections instance is determined by bCourses enrol
 
 ## Creating sections
 
-{: .warning }
-If sections already exist, reimporting them will result in duplicate sections.
-
-- Track this [issue](https://github.com/Cal-CS-61A-Staff/berkeley-cs61a/issues/7788) on GitHub. Note: You must be on of the private CS61A repository to see this issue.
-- See [Updating existing sections](#updating-existing-sections) for more information.
-
 1. Go to your course's sections tool instance.
 2. Login (it will ask you to authorize the sections tool to access your Canvas/bCourses account, click **Authorize**).
 3. Click on the **Admin** page in the navbar.
 4. In the General tab, click on **Import Sections**. This will display a modal where you can copy and paste the link to a Google Sheet containing metadata about the sections you wish to create. **Make sure to follow the format of the sample spreadsheet, otherwise importing will fail.** Note that if you students to be able to join or switch into a section *at any point,* "Can Self Enroll" must be "TRUE." This setting is required in addition to the Admin toggles. Typically, "Can Self Enroll" is only set to false for Scholars sections or other sections that require staff to tightly control enrollmentt.
 5. If the import was successful, you should be able to see the newly created sections on their corresponding page (e.g. if you imported lab sections, click on **Lab** in the navbar to view all lab sections).
 6. If you turned off enrollment settings when [configuring your course settings](#configuring-your-course-settings), click on the **Admin** page in the navbar. In the Lab, Discussion, and/or Tutoring tabs, turn on any enrollment settings you wish.
+
+### Reimporting sections
+
+You can edit the Google Sheet and click **Import Sections** again at any time, for example to change capacities or add a new section. Reimporting doesn't create duplicate sections:
+
+- A row whose Type, Day, Start, End and Location exactly match an existing section updates that section's staff member, capacity, tags and "Can Self Enroll" setting. Students already in the section stay enrolled.
+- If more than one section (or row) has the same Type, Day, Start, End and Location, such as several "Online" sections at the same time, the row's Email must also match the section's staff member.
+- A row that doesn't match an existing section creates a new section.
+- Sections that aren't in the sheet are left alone. To remove one, see [Deleting a section](#deleting-a-section).
+
+After the import, a message says how many sections were added and how many were updated.
+
+{: .note }
+Changing a section's Type, Day, Start, End or Location in the sheet means the row no longer matches that section, so reimporting creates a new section and leaves the old one in place. Make those changes in the section's [Settings tab](#updating-section-metadata) instead.
+
+If a row would set a section's capacity below the number of students already enrolled in it, or has a day or time the tool can't read, the import stops and nothing is imported. The error message gives the sheet's row number.
 
 ## Directly enrolling students into sections
 
@@ -99,26 +109,40 @@ Enrolling individual students using this method will remove them from any existi
 
 ### Updating section metadata
 
-{: .warning}
-Section capacity currently cannot be modified through the UI.
-
-- Track this [issue](https://github.com/Cal-CS-61A-Staff/berkeley-cs61a/issues/7793) on GitHub.  Note: You must be on of the private CS61A repository to see this issue.
-- See [Updating existing sections](#updating-existing-sections) for a workaround
+Only admins (instructors and lead TAs) see a section's **Settings** tab.
 
 1. Go to your course's sections tool instance.
 2. Login (it will ask you to authorize the sections tool to access your Canvas/bCourses account, click **Authorize**).
 3. Go to the **Lab**, **Discussion**, and/or **Tutoring** page using the navbar
-4. If you are the staff member teaching the section, click on **View Details** for your section. Otherwise you can also just click on other staff members' sections to view the section details.
+4. Click on **View Details** for the section you want to change.
 5. Click on the **Settings** tab.
-6. Edit any fields you wish.
+6. Edit any of these fields, then click **Submit Changes**:
+    - **Staff Member**: see [Changing a section's staff member](#changing-a-sections-staff-member).
+    - **Capacity**: a whole number, at least the number of students already enrolled.
+    - **Location**
+    - **Day**: one of M, T, W, Th or F.
+    - **Start Time** and **End Time**: hh:mm followed by a or p, with a leading 0 (for example 08:30a or 02:15p). The end time must be after the start time.
+    - **Tags**: separated by commas.
+
+A message below the button says whether your changes were saved. If any change is rejected, its error appears at the top of the page. Either way, the fields then show the section's saved values, so a rejected value has to be entered again after you fix it.
+
+### Changing a section's staff member
+
+To reassign a section, for example to swap two TAs, pick the new staff member from the **Staff Member** dropdown in the section's [Settings tab](#updating-section-metadata), or pick **Unassigned**. You don't need to reset or reimport anything, and the section's students stay enrolled.
+
+The dropdown lists:
+- TAs and instructors in the course on bCourses who have logged in to the sections tool, going by their bCourses role when they last logged in. Someone added to the bCourses course since then needs to log out and back in before they appear.
+- Anyone listed as a section's staff member in an imported Sections sheet who hasn't logged in yet.
+
+Staff members can also claim or leave sections themselves if the matching settings are turned on in the Lab, Discussion, and Tutoring tabs of the **Admin** page.
 
 ### Updating section capacities
 
-1. Follow the instructions in [creating sections](#creating-sections), except modify the sections Google Sheet with your desired capacities and then import it. This will create [duplicate sections](https://github.com/Cal-CS-61A-Staff/berkeley-cs61a/issues/7788).
-2. If you have not yet opened sections for enrollment, all you need to do is click into each outdated section and delete it. Otherwise, continue to step 3.
-3. Click into each old section, go to the **Roster** tab, and click on **Copy Roster**.
-    - If you are **expanding** section capacities: Click into the corresponding new section with updated capacity, go to the Roster tab, click on **Add Students**, and paste the list of student emails you copied in the previous step to move them into the new section.
-    - If you are **decreasing** section capacities: You will need to manually move students around according to whatever your course policies are.
+Change a section's **Capacity** in its [Settings tab](#updating-section-metadata), or change the capacities in your Sections sheet and [reimport it](#reimporting-sections). Either way, students stay in their sections, and a capacity can't be set below the number of students already enrolled. To lower it further, move students out of the section first.
+
+### Deleting a section
+
+An admin can delete a section once no students are enrolled in it: open the section, go to the **Roster** tab, and click **Delete Section**.
 
 {: .note }
 Staff can enroll students above the set capacity of a section. The section will display no open seats until enrollment goes under capacity. Capacity is most important if you allow students to switch sections themselves using the sections tool.
