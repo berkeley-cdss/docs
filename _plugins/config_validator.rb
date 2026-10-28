@@ -16,21 +16,21 @@
 
 # See the inclusion_validator to add simple allow-list style validations
 
-# A simple class for nicer error message formatting.
-class ConfigValidationError < StandardError
-  attr_reader :errors
-
-  def initialize(errors)
-    super
-    @errors = errors
-  end
-
-  def message
-    "The config file contained validation errors:\n\t#{errors.join('\n\t')}\n\n"
-  end
-end
-
 module Jekyll
+  # A simple class for nicer error message formatting.
+  class ConfigValidationError < StandardError
+    attr_reader :errors
+
+    def initialize(errors)
+      super
+      @errors = errors
+    end
+
+    def message
+      "The config file contained validation errors:\n\t#{errors.join('\n\t')}\n\n"
+    end
+  end
+
   # Jekyll::ConfigValidator class definition (see docs at the top of file)
   class ConfigValidator
     SEMESTER_REGEXP = /(wi|sp|su|fa)\d\d$/
