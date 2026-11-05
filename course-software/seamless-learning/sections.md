@@ -141,19 +141,49 @@ Staff can customize the sections they teach from their section's card on the **L
 
 ## API Access
 
-Sections functions marked with the `@api` decorator in the [GitHub repository](https://github.com/berkeley-cdss/sections) can also be called by a program, for example to read attendance. API access currently works for every course on the deployment at once, so it isn't self-service: [contact the maintainers]({% link about.md %}#contact) if your course needs it. [berkeley-cdss/sections#29](https://github.com/berkeley-cdss/sections/issues/29) tracks limiting API access to the courses you're an admin for.
+Sections functions marked with the `@api` decorator in the [GitHub repository](https://github.com/berkeley-cdss/sections) can also be called by a program, for example to read attendance. Course admins (instructors and Lead TAs) can create API keys for their course themselves.
 
-Once you have access, requests look like this, where `<canvas course id>` is the number in your course's bCourses URL:
+### Creating an API key
+
+1. Log in to Sections and open your course.
+2. Click on the **Admin** page in the navbar.
+3. Click on the **API Keys** tab.
+4. Enter a name that says what the key is for, such as "Gradescope attendance sync", and click **Create key**.
+5. Copy the key and store it somewhere safe, like a password. **It's only shown once.** If you lose it, create a new key and revoke the old one.
+
+A key:
+- Works only in the course it was created in, and only while you're an admin there in bCourses.
+- Stops working if you haven't logged in to Sections in the last 7 days, because bCourses roles are only read when you log in. Log in to Sections again to start it working.
+- Can act as you, or as anyone in the course, but no one outside it.
+- Can't create, revoke or rotate keys. Do that on the **API Keys** tab.
+
+Every request made with a key is logged with the key that made it. The **API Keys** tab lists every key in the course with its owner and when it was last used.
+
+### Revoking and rotating keys
+
+On the **API Keys** tab:
+- **Revoke** stops a key working immediately. Any admin can revoke any key in the course, for example a key belonging to someone who has left the course staff.
+- **Rotate** replaces one of your own keys with a new one with the same name, and revokes the old one. Update your program with the new key.
+
+If a key may have leaked, revoke or rotate it right away.
+
+### Making requests
+
+Send the key in an `Authorization` header. `<canvas course id>` is the number in your course's bCourses URL:
 
 ```
 curl -X POST \
+  -H "Authorization: Bearer $SECTIONS_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-        "secret": "", # the secret from the maintainers
-        "email": "", # the course member to act as
+        "email": "<staff>@berkeley.edu",
         "args": {
             "email": "<student>@berkeley.edu"
         }
       }' \
   "TODO: Sections URL/offerings/<canvas course id>/api/sudo/get_student_discussion_attendance"
 ```
+
+`email` is the course member to act as; leave it out to act as yourself. `args` are the function's arguments. A successful response looks like `{"success": true, "data": ...}`. Otherwise it's `{"success": false, "message": ...}`, where the message says what went wrong, such as an invalid key or that you need to log in again.
+
+After 10 failed attempts with invalid keys in 15 minutes, requests from your computer are refused for a while.
