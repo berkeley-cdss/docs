@@ -34,11 +34,17 @@ To take a course off Sections, click the **×** next to it under **Staff Course 
 
 Each person's role in a course comes from their bCourses enrollment:
 * Admin permissions are granted to instructors and Lead TAs.
-* Staff permissions are granted to instructors and all TAs.
+* Staff permissions are granted to instructors and all TAs. Staff can view every section in the course, but can only change the sections they teach: [see below](#who-can-change-a-section).
 * Students can join sections and see their attendance.
 * Anyone else, including observers, can't open the course in Sections.
 
 Roles are read from bCourses when someone logs in. Someone added to the bCourses course, or given a new role, after logging in needs to log out of Sections and log in again.
+
+### Who can change a section
+
+Only a section's staff member and the course's admins can change its roster and attendance, and only its staff member can change its [introduction, video call link or enrollment code](#section-customization-by-staff-members). Other staff can open the section and see its roster and attendance, but don't see the buttons to change them, and its attendance tab says "You are not the TA assigned to this section, so you cannot log attendance."
+
+To let another TA take attendance for a section, for example when they're covering it, an admin can [change the section's staff member](#changing-a-sections-staff-member) and change it back afterwards. An admin can also take attendance for them.
 
 ## Configuring your course settings
 
@@ -87,7 +93,7 @@ Enrolling individual students using this method will remove them from any existi
 
 1. Log in to Sections and open your course.
 2. Go to the **Lab**, **Discussion**, and/or **Tutoring** page using the navbar
-3. If you are the staff member teaching the section, click on **View Details** for your section. Otherwise you can also just click on other staff members' sections to view the section details.
+3. Click on **View Details** for your section. Admins can click on any section. Other staff can open other staff members' sections, but can't add students to them: see [Who can change a section](#who-can-change-a-section).
 4. Click on the **Roster** tab.
 5. Click on the **Add Students** tab and enter a comma-separated list of student emails.
 
@@ -134,7 +140,7 @@ Staff can enroll students above the set capacity of a section. The section will 
 
 ## Section customization by staff members
 
-Staff can customize the sections they teach from their section's card on the **Lab**, **Discussion**, or **Tutoring** page:
+Staff can customize the sections they teach from their section's card on the **Lab**, **Discussion**, or **Tutoring** page. Other staff can't change them:
 - A short introduction shown to students (at most 255 characters).
 - A video call link, if the section meets online.
 - An enrollment code, for sections students can join themselves. Students then need the code to join.
