@@ -50,15 +50,41 @@ To let another TA take attendance for a section, for example when they're coveri
 
 1. Log in to Sections and open your course (see [Setting up Sections for your course](#setting-up-sections-for-your-course)).
 2. Click on the **Admin** page in the navbar.
-3. If you are reconfiguring your course's sections tool, there may be data from the previous semester still there. To reset the tool, in the General tab, click the **Reset Sections Tool** button. **This is destructive, be careful!**
-4. Optional: In the General tab, set the welcome message students will see on the sections tool homepage when they login and click **Save**.
+3. If you are reconfiguring your course's sections tool, there may be data from the previous semester still there. To reset the tool, in the **Roster Management** tab, click the **Reset Sections Tool** button. **This is destructive, be careful!**
+4. Optional: In the **General** tab, set the welcome message students will see on the sections tool homepage when they login and click **Save**.
 5. On the Lab, Discussion, and Tutoring tabs, **we recommend initially turning off all settings** so that students don't enroll in sections before they have been completely set up by staff. Of course, if your course doesn't have certain kinds of sections (e.g. tutoring), it also makes sense to turn those off.
+
+## Setting up your roster
+
+The **Roster Management** tab of the **Admin** page lists the steps to set up a semester, with a button for each, in order:
+
+1. **Sync bCourses Students**: [add your bCourses students to Sections](#syncing-students-with-bcourses).
+2. **Import Sections**: [create your sections](#creating-sections).
+3. **Import Section Assignments**: [put students in their sections](#mass-enrolling-students).
+
+It's safe to run any of these steps again. For example, re-run the bCourses sync to drop students who have dropped your course from their sections. You can also add more sections after your initial setup, and assign students in multiple rounds, for example as students add the course late.
+
+## Syncing students with bCourses
+
+1. Log in to Sections and open your course.
+2. Click on the **Admin** page in the navbar.
+3. In the **Roster Management** tab, click **Sync bCourses Students**.
+4. Sections checks your bCourses roster, which may take a minute, then lists the students it will add and remove. Click **Sync** to make the changes.
+
+The sync makes your course's students in Sections match its bCourses roster:
+- Students on the bCourses roster are added, including students who haven't accepted their bCourses invitation yet.
+- Students no longer on the roster are removed from the course and from its sections. Their attendance records are kept, and are still in [**Export Full Attendances**](#exporting-rosters-and-attendance).
+- Staff aren't changed. Their roles come from bCourses when they log in.
+
+Before you click **Sync**, the list also shows any students it can't add: students whose email already belongs to someone in Sections with a different bCourses account, and students whose email bCourses doesn't share. Contact the Sections maintainers about the first kind.
+
+Students who join the course in bCourses later are added the next time anyone syncs, or when they log in to Sections themselves.
 
 ## Creating sections
 
 1. Log in to Sections and open your course.
 2. Click on the **Admin** page in the navbar.
-3. In the General tab, click on **Import Sections**. This will display a modal where you can copy and paste the link to a Google Sheet containing metadata about the sections you wish to create. **Make sure to follow the format of the sample spreadsheet, otherwise importing will fail.** Note that if you students to be able to join or switch into a section *at any point,* "Can Self Enroll" must be "TRUE." This setting is required in addition to the Admin toggles. Typically, "Can Self Enroll" is only set to false for Scholars sections or other sections that require staff to tightly control enrollmentt.
+3. In the **Roster Management** tab, click on **Import Sections**. This will display a modal where you can copy and paste the link to a Google Sheet containing metadata about the sections you wish to create. **Make sure to follow the format of the sample spreadsheet, otherwise importing will fail.** Note that if you students to be able to join or switch into a section *at any point,* "Can Self Enroll" must be "TRUE." This setting is required in addition to the Admin toggles. Typically, "Can Self Enroll" is only set to false for Scholars sections or other sections that require staff to tightly control enrollmentt.
 4. If the import was successful, you should be able to see the newly created sections on their corresponding page (e.g. if you imported lab sections, click on **Lab** in the navbar to view all lab sections).
 5. If you turned off enrollment settings when [configuring your course settings](#configuring-your-course-settings), click on the **Admin** page in the navbar. In the Lab, Discussion, and/or Tutoring tabs, turn on any enrollment settings you wish.
 
@@ -84,7 +110,12 @@ If a row would set a section's capacity below the number of students already enr
 
 1. Log in to Sections and open your course.
 2. Click on the **Admin** page in the navbar.
-3. In the **General** tab, click **Import Students**. This will display a modal where you can copy and paste the link to a Google Sheet containing student emails and the sections they're enrolled in. **Make sure to follow the format of the sample spreadsheet, otherwise importing will fail.**
+3. In the **Roster Management** tab, click **Import Section Assignments**. This will display a modal where you can copy and paste the link to a Google Sheet containing student emails and the sections they're enrolled in. **Make sure to follow the format of the sample spreadsheet, otherwise importing will fail.**
+
+Importing puts each student in the section on their row, and takes them out of any other section of the same type. To edit your current assignments, click [**Export Section Assignments**](#exporting-rosters-and-attendance), edit the spreadsheet, and import it again.
+
+{: .note }
+[Sync with bCourses](#syncing-students-with-bcourses) before importing section assignments. An email in the sheet that isn't one of your course's students in Sections, such as a typo, a student who has dropped, or a different email than the one in bCourses, is added to the course as a new student. The next bCourses sync removes them again, along with their section assignment.
 
 ### Enrolling individual students
 
@@ -96,6 +127,23 @@ Enrolling individual students using this method will remove them from any existi
 3. Click on **View Details** for your section. Admins can click on any section. Other staff can open other staff members' sections, but can't add students to them: see [Who can change a section](#who-can-change-a-section).
 4. Click on the **Roster** tab.
 5. Click on the **Add Students** tab and enter a comma-separated list of student emails.
+
+## Finding a student
+
+To see which sections a student is in, go to the **Roster Management** tab of the **Admin** page and search for part of their name or email under **Find a student by name or email**. Each result lists the student's sections in your course, or "Floating" for a lab or discussion they aren't in. Click a section to open it, or the student's name to see their attendance.
+
+## Exporting rosters and attendance
+
+The export buttons are on the **Roster Management** tab of the **Admin** page:
+
+- **Export Section Assignments** (CSV) has one row per student per section, in the format **Import Section Assignments** reads, so you can export, edit the spreadsheet, and import it back. Students in no section aren't in it.
+- **Export Full Attendances** (JSON) has every attendance record, by section type and student. All students who have had attendance recorded are included in this export, even if the student has been removed from a section or this course offering.
+- **Export Students** (CSV) has one row per student in the course, with their section of each type, or "Floating" if they have no lab or discussion section. [Sync with bCourses](#syncing-students-with-bcourses) first so it includes students who've just joined and leaves out those who've dropped.
+
+Each file is named for your course and term, for example `cs61a-fa26-students.csv`.
+
+{: .note }
+A spreadsheet cell that starts with `=`, `+`, `-` or `@` could run as a formula when you open the file, so Sections puts an apostrophe (`'`) in front of any exported value that starts with one of them. Some spreadsheet programs show the apostrophe.
 
 ## Updating existing sections
 
